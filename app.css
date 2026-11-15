@@ -213,3 +213,8 @@ table.list td.r, table.list th.r { text-align: right; }
 }
 .doc h1 { font-size: 1.4rem; }
 .doc table { display: block; overflow-x: auto; }
+@media print {
+  .doc section.blk { break-inside: avoid; page-break-inside: avoid; }
+  .doc h2.lib { break-before: page; page-break-before: always; }
+  .doc h3 + ul { break-before: avoid; }
+}

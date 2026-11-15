@@ -410,7 +410,7 @@
   /* ---------------- Onglet Document ---------------- */
   function viewDoc(v) {
     v.innerHTML = `<div class="card doc">${docHTML()}</div>
-      <div class="btn-row no-print"><button class="btn ghost" onclick="window.print()">Imprimer / PDF</button><a class="btn ghost" href="PLAN.md" target="_blank" rel="noopener">Version Markdown</a></div>`;
+      <div class="btn-row no-print"><button class="btn ghost" onclick="window.print()">Imprimer / PDF</button><a class="btn ghost" href="Plan-T1-2027.pdf" target="_blank" rel="noopener">PDF (FTP 288 W)</a><a class="btn ghost" href="PLAN.md" target="_blank" rel="noopener">Version Markdown</a></div>`;
   }
   function docHTML() {
     const m = P.meta;
@@ -421,15 +421,18 @@
       <h2>Principes</h2><ul>${P.principles.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
       <h2>Zones de puissance (FTP ${ftp()} W)</h2><table><tr><th>Zone</th><th>%FTP</th><th>Watts</th></tr>
       ${P.zones.map((z) => `<tr><td>${z.z} — ${esc(z.name)}</td><td>${z.pct[0]}–${z.pct[1]} %</td><td>${W(z.pct[0])}–${W(z.pct[1])} W</td></tr>`).join("")}</table>`;
+    h += `<section class="blk"><h2>Vue d'ensemble</h2><table><tr><th>Sem.</th><th>Dates</th><th>Type</th><th>Thème</th><th>Vélo</th><th>Total</th></tr>
+      ${P.weeks.map((wk) => { let v = 0, t = 0; DAYS.forEach((d) => wk.days[d].forEach((k) => { const w = P.workouts[k]; t += w.dur; if (w.sport === "velo" || w.sport === "test") v += w.dur; }));
+        return `<tr><td><b>S${wk.n}</b></td><td>${fmt(dateOf(wk.n, 0), { day: "numeric", month: "short" })} → ${fmt(dateOf(wk.n, 6), { day: "numeric", month: "short" })}</td><td>${{ charge: "Charge", recup: "Allégée", ski: "Ski", test: "Reprise + test" }[wk.type]}</td><td>${esc(wk.theme)}</td><td>${hm(v)}</td><td>${hm(t)}</td></tr>`; }).join("")}</table></section>`;
     P.blocks.forEach((b) => {
-      h += `<h2>${esc(b.name)}</h2><p>${esc(b.focus)}</p><table><tr><th>Sem.</th>${DAYS.map((d) => `<th>${DAY_LABELS[d]}</th>`).join("")}</tr>`;
+      h += `<section class="blk"><h2>${esc(b.name)}</h2><p>${esc(b.focus)}</p><table><tr><th>Sem.</th>${DAYS.map((d) => `<th>${DAY_LABELS[d]}</th>`).join("")}</tr>`;
       b.weeks.forEach((n) => {
         const wk = P.weeks[n - 1];
         h += `<tr><td><b>S${n}</b><br><small>${fmt(dateOf(n, 0), { day: "numeric", month: "short" })}</small><br><small>${esc(wk.theme)}</small></td>${DAYS.map((d) => `<td>${wk.days[d].map((k) => esc(P.workouts[k].title)).join("<br>")}</td>`).join("")}</tr>`;
       });
-      h += `</table>`;
+      h += `</table></section>`;
     });
-    h += `<h2>Bibliothèque des séances</h2>`;
+    h += `<h2 class="lib">Bibliothèque des séances</h2>`;
     const order = ["velo", "test", "natation", "ppg", "mobilite"];
     order.forEach((sp) => Object.entries(P.workouts).filter(([, w]) => w.sport === sp).forEach(([, w]) => {
       const bike = sp === "velo" || sp === "test";
