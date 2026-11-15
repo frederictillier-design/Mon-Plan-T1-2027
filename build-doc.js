@@ -10,7 +10,7 @@ const watts = (z) => `${W(z[0])}–${W(z[1])} W`;
 const hm = (m) => { const h = Math.floor(m / 60), r = m % 60; return h ? `${h}h${r ? String(r).padStart(2, "0") : ""}` : `${r} min`; };
 const dateOf = (n, i) => { const d = new Date(P.meta.start + "T12:00:00"); d.setDate(d.getDate() + (n - 1) * 7 + i); return d; };
 const fd = (d) => d.toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
-const SP = { velo: "Vélo", test: "Test", natation: "Natation", ppg: "Renfo / PPG", mobilite: "Assouplissement", ski: "Ski", repos: "Repos" };
+const SP = { velo: "Vélo", test: "Test", natation: "Natation", renfo: "Renforcement", eveil: "Éveils & assouplissement", ski: "Ski", repos: "Repos" };
 
 let md = `# ${P.meta.title}\n\n`;
 md += `**Objectif :** ${P.meta.event.name} — ${P.meta.event.note}.  \n`;
@@ -42,7 +42,7 @@ P.blocks.forEach((b) => {
 });
 
 md += `## Bibliothèque des séances\n\n`;
-["velo", "test", "natation", "ppg", "mobilite"].forEach((sp) => {
+["velo", "test", "natation", "renfo", "eveil"].forEach((sp) => {
   md += `### ${SP[sp]}\n\n`;
   Object.entries(P.workouts).filter(([, w]) => w.sport === sp).forEach(([, w]) => {
     const bike = sp === "velo" || sp === "test";

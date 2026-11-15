@@ -8,8 +8,8 @@
     velo: { label: "Vélo", color: "var(--velo)" },
     test: { label: "Test", color: "var(--test)" },
     natation: { label: "Natation", color: "var(--natation)" },
-    ppg: { label: "Renfo / PPG", color: "var(--ppg)" },
-    mobilite: { label: "Assouplissement", color: "var(--mobilite)" },
+    renfo: { label: "Renfo", color: "var(--ppg)" },
+    eveil: { label: "Éveil / souplesse", color: "var(--mobilite)" },
     ski: { label: "Ski", color: "var(--ski)" },
     repos: { label: "Repos", color: "var(--repos)" }
   };
@@ -95,7 +95,7 @@
     return `<button class="session" data-date="${it.date}" data-key="${it.key}">
       <span class="stripe" style="background:${sp.color}"></span>
       <span class="body"><span class="title">${esc(wo.title)}</span>
-        <div class="meta">${opts.showDate ? esc(fmt(it.date)) + " · " : ""}${sp.label}${wo.dur ? " · " + hm(wo.dur) : ""}${target ? " · " + target : ""}${wo.outdoor ? " · extérieur" : ""}</div></span>${st}</button>`;
+        <div class="meta">${opts.showDate ? esc(fmt(it.date)) + " · " : ""}${wo.slot && wo.slot !== "—" ? wo.slot.toUpperCase() + " · " : ""}${sp.label}${wo.dur ? " · " + hm(wo.dur) : ""}${target ? " · " + target : ""}${wo.outdoor ? " · extérieur" : ""}</div></span>${st}</button>`;
   }
   function mainTarget(wo) {
     // l'étape la plus intense, pour l'aperçu
@@ -200,7 +200,7 @@
     let html = `<div class="small">${esc(fmt(date, { weekday: "long", day: "numeric", month: "long" }))} · ${(SPORT[wo.sport] || {}).label || ""}</div>
       <h2>${esc(wo.title)}</h2>
       <p class="small">${wo.dur ? "Durée " + hm(wo.dur) : ""}${wo.tss ? " · charge ~" + wo.tss + " TSS" : ""}${wo.outdoor ? " · extérieur si possible" : ""}</p>
-      <table class="steps"><thead><tr><th>Étape</th><th>Durée</th>${isBike ? "<th>Cible</th><th>rpm</th>" : ""}</tr></thead><tbody>${rows}</tbody></table>`;
+      <table class="steps"><thead><tr><th>Étape</th><th>Durée</th>${isBike ? "<th>Cible</th><th>rpm</th>" : ""}</tr></thead><tbody>${rows}</tbody></table>${wo.tip ? `<p class="small" style="border-left:3px solid var(--accent);padding-left:8px;font-style:italic">${esc(wo.tip)}</p>` : ""}`;
     if (track) {
       html += `<div class="sep"></div><h3>Mon ressenti</h3>
       <div class="seg" id="f-status">${Object.entries(STATUS).map(([k, l]) => `<button type="button" data-v="${k}" class="${L.status === k ? "on" : ""}">${l}</button>`).join("")}</div>
@@ -410,7 +410,7 @@
   /* ---------------- Onglet Document ---------------- */
   function viewDoc(v) {
     v.innerHTML = `<div class="card doc">${docHTML()}</div>
-      <div class="btn-row no-print"><button class="btn ghost" onclick="window.print()">Imprimer / PDF</button><a class="btn ghost" href="Plan-T1-2027.pdf" target="_blank" rel="noopener">PDF (FTP 288 W)</a><a class="btn ghost" href="PLAN.md" target="_blank" rel="noopener">Version Markdown</a></div>`;
+      <div class="btn-row no-print"><button class="btn ghost" onclick="window.print()">Imprimer / PDF</button><a class="btn ghost" href="Plan-T1-2027.pdf" target="_blank" rel="noopener">PDF complet (FTP 288 W)</a><a class="btn ghost" href="PLAN.md" target="_blank" rel="noopener">Version Markdown</a></div>`;
   }
   function docHTML() {
     const m = P.meta;
@@ -433,7 +433,7 @@
       h += `</table></section>`;
     });
     h += `<h2 class="lib">Bibliothèque des séances</h2>`;
-    const order = ["velo", "test", "natation", "ppg", "mobilite"];
+    const order = ["velo", "test", "natation", "renfo", "eveil"];
     order.forEach((sp) => Object.entries(P.workouts).filter(([, w]) => w.sport === sp).forEach(([, w]) => {
       const bike = sp === "velo" || sp === "test";
       h += `<h3>${esc(w.title)} <small>(${hm(w.dur)})</small></h3><ul>${w.steps.map((s) => `<li>${esc(s.t)}${s.d ? " — " + hm(s.d) : ""}${bike && s.z ? ` — <b>${watts(s.z)}</b> (${s.z[0]}–${s.z[1]} %)` : ""}${s.c ? ` — ${esc(s.c)} rpm` : ""}${s.n ? `<br><small>${esc(s.n)}</small>` : ""}</li>`).join("")}</ul>`;

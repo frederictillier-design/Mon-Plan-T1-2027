@@ -27,3 +27,7 @@ Installable sur iPhone et PC : Partager → « Sur l'écran d'accueil », ou ic�
 3. Sur un autre appareil : même jeton, puis **Restaurer depuis GitHub** (les données sont fusionnées).
 
 Le jeton n'est stocké que dans le navigateur de l'appareil. Il n'est jamais écrit dans le dépôt ni dans les exports.
+
+## PDF du plan
+
+`node build-pdf.js 288` génère `pdf/plan-print.html` dans la mise en page du plan FTP sept.-déc. 2026 (polices Barlow Condensed et IBM Plex, incluses dans `pdf/fonts`). Pour obtenir le PDF : ouvrir ce fichier dans Chrome, puis Imprimer → Enregistrer en PDF (A4, arrière-plans activés). Pour régénérer après un test, remplacer `288` par la nouvelle FTP.

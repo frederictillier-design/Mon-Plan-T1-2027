@@ -1,0 +1,926 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><title>Plan d'entraînement T1-2027 — 4 janvier au 4 avril 2027</title><style>
+@font-face{font-family:"Barlow Condensed";font-weight:500;src:url(fonts/barlow-condensed-latin-500-normal.woff2)}
+@font-face{font-family:"Barlow Condensed";font-weight:600;src:url(fonts/barlow-condensed-latin-600-normal.woff2)}
+@font-face{font-family:"Barlow Condensed";font-weight:700;src:url(fonts/barlow-condensed-latin-700-normal.woff2)}
+@font-face{font-family:"IBM Plex Sans";font-weight:400;src:url(fonts/ibm-plex-sans-latin-400-normal.woff2)}
+@font-face{font-family:"IBM Plex Sans";font-weight:400;font-style:italic;src:url(fonts/ibm-plex-sans-latin-400-italic.woff2)}
+@font-face{font-family:"IBM Plex Sans";font-weight:500;src:url(fonts/ibm-plex-sans-latin-500-normal.woff2)}
+@font-face{font-family:"IBM Plex Sans";font-weight:600;src:url(fonts/ibm-plex-sans-latin-600-normal.woff2)}
+@font-face{font-family:"IBM Plex Mono";font-weight:400;src:url(fonts/ibm-plex-mono-latin-400-normal.woff2)}
+@font-face{font-family:"IBM Plex Mono";font-weight:500;src:url(fonts/ibm-plex-mono-latin-500-normal.woff2)}
+@page{size:A4;margin:13mm 12mm 15mm}
+*{box-sizing:border-box}
+body{margin:0;font:400 8.6pt/1.45 "IBM Plex Sans",sans-serif;color:#1d2421;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{break-after:page;page-break-after:always}
+.page:last-child{break-after:auto}
+h1,h2,h3,.bt,.wbar b,.st,.day,.cl,.chg,.sth b,.stats b,.goals b,.wn,.dcol b{font-family:"Barlow Condensed",sans-serif;font-weight:700;letter-spacing:.01em}
+.mono,.kicker,.lbl,.stats span,.goals .lbl,.slot,.tag,.dur,.tt th{font-family:"IBM Plex Mono",monospace}
+.dim{color:#8b918d;font-size:7.4pt}
+.kicker{font-size:7pt;letter-spacing:.22em;color:#8b918d;margin-bottom:10mm}
+.cover h1{font-size:50pt;line-height:.93;margin:0 0 5mm;text-transform:uppercase;color:#1d2421}
+.cover h1 .acc{color:#e07a1f}
+.lead{font-size:10.5pt;max-width:150mm;margin:0 0 7mm}
+.stats{display:flex;gap:4mm;margin-bottom:5mm}
+.stats div{border-left:2px solid #1d2421;padding:0 0 0 3mm;min-width:22mm}
+.stats div:nth-child(2){border-color:#e07a1f}.stats div:nth-child(3){border-color:#4f8068}.stats div:nth-child(4){border-color:#2f6e9c}.stats div:nth-child(5){border-color:#5b9aa0}.stats div:nth-child(6){border-color:#b5739d}
+.stats b{display:block;font-size:17pt;line-height:1}.stats span{font-size:6.2pt;letter-spacing:.14em;color:#8b918d}
+.goals{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid #1d2421;border-bottom:1px solid #d8d8d2;padding:3mm 0;margin-bottom:7mm}
+.goals .lbl{display:block;font-size:6.4pt;letter-spacing:.16em;color:#8b918d}.goals b{font-size:12.5pt}
+h2{font-size:15pt;text-transform:uppercase;margin:6mm 0 1.5mm}
+.cover h2{margin-top:0}
+h3{font-size:11pt;text-transform:uppercase;margin:6mm 0 2mm}
+.sub{color:#2c3330;margin:0 0 3.5mm;max-width:150mm}.sub.wide{max-width:none}
+.cadre{display:flex;gap:4mm;align-items:center;border:1px solid #e1e1db;border-left:3px solid #1d2421;padding:2.4mm 4mm;margin-bottom:2mm;background:#fbfbf8}
+.cadre .num{font-family:"Barlow Condensed";font-weight:700;font-size:13pt;width:5mm}
+.cadre p{margin:0}.c2{border-left-color:#4f8068}.c3{border-left-color:#3c4850}.c4{border-left-color:#c9a227}.c5{border-left-color:#2f6e9c}
+.tt{width:100%;border-collapse:collapse;border:1px solid #e1e1db;margin-bottom:3mm}
+.tt th{font-size:6.4pt;letter-spacing:.16em;color:#8b918d;font-weight:400;text-align:left;padding:2mm 2.5mm;border-bottom:1px solid #d8d8d2;background:#f6f6f2}
+.tt td{padding:1.7mm 2.5mm;border-bottom:1px solid #ecece6;vertical-align:top;background:#fbfbf8}
+.tt td.day{font-size:10pt;width:22mm}.tt td.why{color:#2c3330;width:95mm}
+.zones td{vertical-align:middle}.zones td:first-child{white-space:nowrap;width:40mm}.zones td.mono{white-space:nowrap}.sw{display:inline-block;width:3mm;height:3mm;margin-right:2mm;vertical-align:-1px}
+.legend{display:flex;flex-wrap:wrap;gap:2.5mm 4.5mm;margin:3mm 0;font-size:7.2pt;color:#555}
+.legend i{display:inline-block;width:3mm;height:3mm;margin-right:1.2mm;vertical-align:-1px}
+.bhead{display:flex;gap:4mm;align-items:flex-start;border-top:2px solid #1d2421;padding-top:4mm;margin-top:2mm}
+.letter{font-family:"Barlow Condensed";font-weight:700;font-size:34pt;line-height:.8;color:#e07a1f}
+.bt{font-size:18pt;text-transform:uppercase;margin:0}
+.goal{font-size:10pt;margin:3mm 0 5mm 0}
+.whybox{background:#e9ece6;border-left:3px solid #4f8068;padding:3.5mm 5mm;margin-bottom:6mm}
+.whybox .lbl,.box .lbl{font-size:6.4pt;letter-spacing:.18em;color:#6f7a73;margin-bottom:1.5mm}
+.whybox p{margin:0;font-size:9pt}
+.wn{font-size:12pt}.cl{font-size:9.5pt;letter-spacing:.06em}
+.sq{display:inline-flex;gap:.8mm;vertical-align:middle}.sq i{width:2.3mm;height:2.3mm;background:#cfcfc8;display:inline-block}.sq i.on{background:#e07a1f}
+.runner{font-family:"Barlow Condensed";font-weight:500;font-size:10pt;letter-spacing:.18em;color:#8b918d;border-bottom:1px solid #d8d8d2;padding-bottom:1.5mm;margin-bottom:3mm}
+.wbar{display:flex;justify-content:space-between;align-items:center;background:#1d2421;color:#fff;padding:2.5mm 4mm}
+.wbar b{font-size:17pt;margin-right:3mm}.wbar .mono{color:#a9b0ac;font-size:8pt}
+.wbar .chg{font-size:10pt;letter-spacing:.08em}.wbar .sq i{background:#56605b}.wbar .sq i.on{background:#e07a1f}
+.wdesc{background:#f3f3ef;padding:2.3mm 4mm;font-size:8.2pt;border-bottom:1px solid #e1e1db}
+.days{width:100%;border-collapse:collapse}
+.days td{padding:1.7mm 2mm;vertical-align:top;border-bottom:1px solid #ecece6}
+.days tr.first td{border-top:1px solid #dcdcd5}
+.dcol{width:25mm;background:#f6f6f2;border-right:1px solid #e1e1db}.dcol b{font-size:10pt;display:block}
+.slot{width:12mm;font-size:6.4pt;letter-spacing:.14em;color:#9aa09c;padding-top:3mm!important}
+.tagc{width:20mm;padding-top:2.4mm!important}.tag{display:inline-block;border:1px solid;font-size:6.2pt;letter-spacing:.12em;padding:.8mm 1.6mm;background:#fff}
+.cont .st{font-size:10pt;line-height:1.15;margin-bottom:.6mm}.cont .sd{font-size:7.6pt;line-height:1.38;color:#2c3330}
+.tip{font-style:italic;font-size:7.6pt;color:#4a514d;border-left:2px solid;padding:.6mm 0 .6mm 2.5mm;margin-top:1.4mm}
+.prof{width:35mm;text-align:left}.prof svg{display:block}.dur{font-size:7.4pt;color:#5d6460;margin-top:1mm}
+.days tr{break-inside:avoid}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin:4mm 0}
+.box{border:1px solid #e1e1db;background:#fbfbf8;padding:3mm 4mm}.box p{margin:0}.box ul{margin:0;padding-left:4mm}
+.proto td{vertical-align:middle;padding:1.4mm 2.5mm}.proto td.mono{white-space:nowrap}.proto tr.hl td{background:#fbe9de}
+.pace{border-left:3px solid #e07a1f;background:#fbfbf8;padding:1.4mm 4mm;margin-bottom:1.5mm}.pace p{margin:.5mm 0 0}
+.stype{font-size:8pt;border:1px solid #e1e1db;border-left:3px solid;padding:1.9mm 4mm;margin-bottom:2mm;break-inside:avoid;background:#fbfbf8}
+.sth{display:flex;justify-content:space-between;margin-bottom:1mm}.sth b{font-size:11pt}
+.stype p{margin:.3mm 0}
+.rule{border-left:3px solid #c23b2b;padding:1.6mm 0 1.6mm 4mm;margin-bottom:2mm}
+.libw{border-left:3px solid;background:#fbfbf8;border-top:1px solid #ecece6;padding:1.8mm 3.5mm;margin-bottom:1.6mm;break-inside:avoid}.libw .sth b{font-size:9.5pt}.libs{display:flex;flex-direction:column;font-size:7.5pt;line-height:1.35}
+.p2{font-size:8.1pt}.p2 .tt td{padding:1.3mm 2.5mm}.p2 h2{margin-top:4mm}.p2 .sub{margin-bottom:2.5mm}
+.endnote{margin-top:10mm;font-size:6.8pt;color:#8b918d;border-top:1px solid #d8d8d2;padding-top:2mm}
+</style></head><body><section class="page cover">
+  <div class="kicker">PLAN D'ENTRAÎNEMENT · T1-2027 · OBJECTIF ARDÉCHOISE</div>
+  <h1><span class="">TREIZE</span><br><span class="">SEMAINES</span><br><span class="">VERS</span><br><span class="acc">LA VOLCANIQUE</span></h1>
+  <p class="lead">Du 4 janvier au 4 avril 2027. Trois tests FTP, trois blocs, une semaine de ski. Vélo le lundi et le mercredi soir, renforcement et éveils le matin, sortie longue le dimanche — en solo puis avec Pol.</p>
+  <div class="stats">
+    <div><b>13</b><span>SEMAINES</span></div><div><b>3</b><span>TESTS FTP</span></div><div><b>3</b><span>BLOCS</span></div>
+    <div><b>4–9 h</b><span>VÉLO / SEMAINE</span></div><div><b>3</b><span>ÉVEILS / SEMAINE</span></div><div><b>1</b><span>SEMAINE DE SKI</span></div>
+  </div>
+  <div class="goals"><div><span class="lbl">FTP</span><b>288 → &gt; 300 W</b></div><div><span class="lbl">POIDS</span><b>90 → 85 kg</b></div><div><span class="lbl">W/KG</span><b>3.20 → 3.53</b></div><div><span class="lbl">OBJECTIF</span><b>Volcanique · juin 2027</b></div></div>
+  <h2>Le cadre</h2><p class="sub">Cinq chantiers, une hiérarchie. Quand deux choses entrent en conflit, celle du haut gagne.</p>
+  <div class="cadre c1"><span class="num">1</span><p><b>FTP</b> — la priorité. Plus de 300 W en juin. Deux séances de qualité par semaine, non négociables.</p></div><div class="cadre c2"><span class="num">2</span><p><b>Endurance Volcanique</b> — la sortie longue du dimanche, en solo puis 1h45 à 2h avec Pol. Elle construit la durabilité qui a manqué en 2026 (−14 % de puissance en seconde moitié).</p></div><div class="cadre c3"><span class="num">3</span><p><b>Renforcement</b> — deux séances le matin, plus trois éveils. Ischios, stabilité du bassin et du genou, haut du corps pour le crawl.</p></div><div class="cadre c4"><span class="num">4</span><p><b>Poids</b> — 90 → 85 kg en juin, soit environ −0,7 kg par mois. Déficit modéré les jours faciles, jamais les jours de qualité. Environ 1,6 à 2 g de protéines par kg.</p></div><div class="cadre c5"><span class="num">5</span><p><b>Natation</b> — jeudi soir, 1h30. Technique et battement de jambes : ni performance ni récupération.</p></div>
+</section><section class="page p2">
+  <h2>La semaine type</h2>
+  <p class="sub wide">Deux séances de qualité le lundi et le mercredi soir, séparées par un mardi calme. Le renforcement passe le matin, ce qui laisse une douzaine d'heures avant toute séance du soir. Le vrai enjeu n'est pas la journée mais le lendemain : les courbatures du travail lourd culminent entre 24 et 48 heures. C'est pourquoi le renfo A tombe le jeudi, sans vélo, et que ses courbatures sont résorbées pour la sortie longue du dimanche.</p>
+  <table class="tt"><thead><tr><th>JOUR</th><th>MATIN</th><th>SOIR</th><th>POURQUOI LÀ</th></tr></thead><tbody>
+  <tr><td class="day">Lundi</td><td>Éveil 1 · 18 min</td><td>Vélo qualité 1 · ≤ 1h30</td><td class="why">La séance la plus dure de la semaine, sur les jambes les plus fraîches : la partie avec Pol du dimanche est en bas de Z2.</td></tr><tr><td class="day">Mardi</td><td>Éveil 3 · 25 min</td><td>—</td><td class="why">Le seul jour totalement calme. C'est pour ça qu'il porte la séance d'assouplissement la plus longue.</td></tr><tr><td class="day">Mercredi</td><td>Éveil 2 · 15 min</td><td>Vélo qualité 2 · ≤ 1h30</td><td class="why">48 h après Q1 : de quoi encaisser une seconde séance de qualité sans cumul.</td></tr><tr><td class="day">Jeudi</td><td>Renfo A · bas du corps</td><td>Natation 1h30</td><td class="why">Pas de vélo ce jour : c'est la seule fenêtre où le travail lourd des jambes ne pénalise rien de prioritaire. Les courbatures (24-48 h) tombent sur le vendredi et le samedi, jours sans vélo.</td></tr><tr><td class="day">Vendredi</td><td>Renfo B · haut du corps</td><td>—</td><td class="why">Le haut du corps ne coûte rien aux jambes. La natation étant passée la veille, les épaules sont libres.</td></tr><tr><td class="day">Samedi</td><td>Repos · 1 fois par mois : Z2 2 h</td><td>—</td><td class="why">Repos par défaut. Une fois par mois (16/01, 13/02, 13/03), une sortie Z2 pour apprendre à enchaîner deux jours de vélo.</td></tr><tr><td class="day">Dimanche</td><td>Sortie longue solo + Pol</td><td>—</td><td class="why">72 h après le renfo A : les courbatures sont résorbées. Toute l'intensité est dans la partie solo ; les 1h45 à 2h avec Pol prolongent l'endurance sur jambes fatiguées.</td></tr></tbody></table>
+  <h2>Les plages</h2>
+  <p class="sub wide">Toutes les séances sont écrites en pourcentage de FTP. Les watts indiqués sont calculés pour une FTP de <b>288 W</b> : ils se recalent après chaque test (19/12, 27/01, 03/03, 31/03). Les plages cardiaques sont exprimées en pourcentage de la FC seuil, c'est-à-dire la FC moyenne des minutes 5 à 20 du test, et non de la FC max.</p>
+  <table class="tt zones"><thead><tr><th>ZONE</th><th>% FTP</th><th>WATTS (288 W)</th><th>% FC SEUIL</th><th>SENSATION</th></tr></thead><tbody>
+  <tr><td><span class="sw" style="background:#a9b9c1"></span><b>Z1 · Récupération</b></td><td class="mono">&lt; 55 %</td><td class="mono">&lt; 158 W</td><td class="mono">&lt; 75 %</td><td>Pédalage libre, conversation totale.</td></tr><tr><td><span class="sw" style="background:#4f8068"></span><b>Z2 · Endurance</b></td><td class="mono">56 – 75 %</td><td class="mono">161 – 216 W</td><td class="mono">75 – 83 %</td><td>Base aérobie. Phrases complètes possibles.</td></tr><tr><td><span class="sw" style="background:#c9a227"></span><b>Z3 · Tempo</b></td><td class="mono">76 – 87 %</td><td class="mono">219 – 251 W</td><td class="mono">84 – 91 %</td><td>Soutenu mais confortable. Phrases courtes.</td></tr><tr><td><span class="sw" style="background:#e07a1f"></span><b>SS · Sweet spot</b></td><td class="mono">88 – 94 %</td><td class="mono">253 – 271 W</td><td class="mono">92 – 95 %</td><td>Inconfortable, tenable 20 à 40 min. Quelques mots.</td></tr><tr><td><span class="sw" style="background:#c23b2b"></span><b>Z4 · Seuil</b></td><td class="mono">95 – 105 %</td><td class="mono">274 – 302 W</td><td class="mono">96 – 102 %</td><td>Respiration profonde et rythmée. Un mot à la fois.</td></tr><tr><td><span class="sw" style="background:#6d2442"></span><b>Z5 · VO₂max</b></td><td class="mono">106 – 120 %</td><td class="mono">305 – 346 W</td><td class="mono">décalée, non pilotable</td><td>Maximal sur 30 s à 5 min. Aucune parole.</td></tr></tbody></table>
+  <div class="legend"><span><i style="background:#a9b9c1"></i>Récupération</span><span><i style="background:#4f8068"></i>Endurance</span><span><i style="background:#c9a227"></i>Tempo</span><span><i style="background:#e07a1f"></i>Sweet spot</span><span><i style="background:#c23b2b"></i>Seuil</span><span><i style="background:#6d2442"></i>VO₂max</span><span><i style="background:#5b9aa0"></i>Éveil</span><span><i style="background:#3c4850"></i>Renfo</span><span><i style="background:#2f6e9c"></i>Natation</span><span><i style="background:#b5739d"></i>Ski</span><span><i style="background:#d3d3cc"></i>Repos</span></div>
+  <p class="sub wide">Chaque séance porte un petit profil : la hauteur des barres représente l'intensité, la largeur représente le temps. Un coup d'œil suffit à voir la forme de la séance avant de la lire.</p>
+</section><section class="page">
+    <div class="bhead"><span class="letter">A</span><div><h2 class="bt">BLOC A — BASE &amp; SWEET SPOT</h2><div class="mono dim">4 – 31 janvier</div></div></div>
+    <p class="goal">Reconstruire le volume après les fêtes et installer le sweet spot long.</p>
+    <div class="whybox"><div class="lbl">POURQUOI CE BLOC</div><p>Le sweet spot, entre 88 et 94 % de la FTP, offre le meilleur rapport entre stimulus et fatigue pour relancer une base aérobie. En parallèle, la force-vélocité s'attaque à la cadence en montée, point faible mesuré sur l'EDT et sur le Rouvey (56-72 rpm). Le renfo travaille l'endurance de force (3 × 12) avant de charger lourd.</p></div>
+    <h3>Les semaines de ce bloc</h3>
+    <table class="tt bw"><thead><tr><th>SEMAINE</th><th>CHARGE</th><th>SÉANCES VÉLO</th><th>VOLUME</th></tr></thead><tbody>
+    <tr><td><b class="wn">S1</b><div class="mono dim">4 – 10 janvier</div></td><td><div class="cl">MODÉRÉE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td><td>Sweet spot 3 × 12 min · Force-vélocité · Sortie longue 2h30 (solo + Pol)</td><td class="mono">5 h 10</td></tr><tr><td><b class="wn">S2</b><div class="mono dim">11 – 17 janvier</div></td><td><div class="cl">FORTE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td>Sweet spot 3 × 15 min · VO2max 30/30 — 2 × 10 · Samedi : sortie Z2 2 h (doublé) · Sortie longue 3 h — solo tempo + Pol</td><td class="mono">7 h 35</td></tr><tr><td><b class="wn">S3</b><div class="mono dim">18 – 24 janvier</div></td><td><div class="cl">FORTE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td>Sweet spot 2 × 20 min · Force-vélocité · Sortie longue 3h30 — solo tempo + Pol</td><td class="mono">6 h 15</td></tr><tr><td><b class="wn">S4</b><div class="mono dim">25 – 31 janvier</div></td><td><div class="cl">DÉCHARGE</div><span class="sq"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></td><td>Récupération active · Test FTP 20 min (Rouvy, mode Slope) · Sortie souple 2 h (avec Pol)</td><td class="mono">4 h 06</td></tr>
+    </tbody></table>
+  </section><section class="page week">
+      <div class="runner">BLOC A — BASE &amp; SWEET SPOT</div>
+      <div class="wbar"><div><b>S1</b><span class="mono">4 – 10 janvier</span></div><div class="chg">MODÉRÉE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div></div>
+      <div class="wdesc">Première semaine au format définitif. On réinstalle le sweet spot et le geste de cadence, sans chercher la fatigue.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">4 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sweet spot 3 × 12 min</div><div class="sd">Échauffement progressif 15 min · 3 × 12 min sweet spot 46 min à 88–92 % (253–265 W), récup 5 min à 55 % entre les blocs · Z2 + retour au calme 14 min. Cadence 85-95 rpm.</div><div class="tip" style="border-color:#c9a227">Cadence 85-95 rpm sur les blocs. Si la FC dérive de plus de 5 bpm entre le 1er et le 3e bloc, rester à 88 % la semaine suivante.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.44" width="23.40" height="10.56" fill="#4f8068"/><rect x="24.00" y="6.16" width="18.60" height="15.84" fill="#e07a1f"/><rect x="43.20" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="51.20" y="6.16" width="18.60" height="15.84" fill="#e07a1f"/><rect x="70.40" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="78.40" y="6.16" width="18.60" height="15.84" fill="#e07a1f"/><rect x="97.60" y="11.88" width="21.80" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h 15</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">5 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">6 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Force-vélocité</div><div class="sd">Échauffement progressif 15 min · 5 × 5 min force à 55-60 rpm 37 min à 80–85 % (230–245 W), récup 3 min à 55 %. Buste immobile, pas de déhanchement · 4 × 3 min tempo à 100 rpm 20 min à 76–82 % (219–236 W), récup 2 min. Bassin stable à haute cadence · Retour au calme 13 min. Cadence 55-60 rpm.</div><div class="tip" style="border-color:#c9a227">Les blocs à 55-60 rpm se font assis, sans à-coups. Si les genoux tirent, remonter la cadence immédiatement.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.44" width="20.58" height="10.56" fill="#4f8068"/><rect x="21.18" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="28.24" y="12.85" width="3.64" height="9.15" fill="#a9b9c1"/><rect x="32.47" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="39.53" y="12.85" width="3.64" height="9.15" fill="#a9b9c1"/><rect x="43.76" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="50.82" y="12.85" width="3.64" height="9.15" fill="#a9b9c1"/><rect x="55.06" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="62.12" y="12.85" width="3.64" height="9.15" fill="#a9b9c1"/><rect x="66.35" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="73.41" y="8.10" width="3.64" height="13.90" fill="#c9a227"/><rect x="77.65" y="12.85" width="3.16" height="9.15" fill="#a9b9c1"/><rect x="81.41" y="8.10" width="3.64" height="13.90" fill="#c9a227"/><rect x="85.65" y="12.85" width="3.16" height="9.15" fill="#a9b9c1"/><rect x="89.41" y="8.10" width="3.64" height="13.90" fill="#c9a227"/><rect x="93.65" y="12.85" width="3.16" height="9.15" fill="#a9b9c1"/><rect x="97.41" y="8.10" width="3.64" height="13.90" fill="#c9a227"/><rect x="101.65" y="12.32" width="17.75" height="9.68" fill="#a9b9c1"/></svg><div class="mono dur">1 h 25</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">7 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · endurance de force</div><div class="sd">Squat gobelet, fentes, hip thrust, mollets en 3 × 12 · Nordic 2 × 5 · gainage lombo-pelvien.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — technique &amp; battement</div><div class="sd">Éducatifs crawl, 8 × 50 m jambes à la planche, 6 × 100 m avec palmes puis 4 × 100 m sans. Focus battement depuis la hanche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">8 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">9 janv.</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Repos</div><div class="sd">Repos complet ou marche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">10 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 2h30 (solo + Pol)</div><div class="sd"><b>Solo 40 min</b> : Z2 40 min. <b>Avec Pol 1 h 50</b> en bas de Z2, 56–62 % (161–179 W). Cadence 85-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.21" width="31.40" height="11.79" fill="#4f8068"/><rect x="32.00" y="11.62" width="87.40" height="10.38" fill="#4f8068"/></svg><div class="mono dur">2 h 30</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC A — BASE &amp; SWEET SPOT</div>
+      <div class="wbar"><div><b>S2</b><span class="mono">11 – 17 janvier</span></div><div class="chg">FORTE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div></div>
+      <div class="wdesc">Premier rappel de VO₂max court (30/30) et premier week-end en doublé : samedi Z2, dimanche solo tempo puis Pol.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">11 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sweet spot 3 × 15 min</div><div class="sd">Échauffement progressif 15 min · 3 × 15 min sweet spot 55 min à 88–93 % (253–268 W), récup 5 min à 55 % · Retour au calme 15 min. Cadence 85-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.44" width="20.58" height="10.56" fill="#4f8068"/><rect x="21.18" y="6.07" width="20.58" height="15.93" fill="#e07a1f"/><rect x="42.35" y="12.85" width="6.46" height="9.15" fill="#a9b9c1"/><rect x="49.41" y="6.07" width="20.58" height="15.93" fill="#e07a1f"/><rect x="70.59" y="12.85" width="6.46" height="9.15" fill="#a9b9c1"/><rect x="77.65" y="6.07" width="20.58" height="15.93" fill="#e07a1f"/><rect x="98.82" y="12.32" width="20.58" height="9.68" fill="#a9b9c1"/></svg><div class="mono dur">1 h 25</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">12 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">13 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">VO2max 30/30 — 2 × 10</div><div class="sd">Échauffement progressif 15 min · 2 × (10 × 30 s à 120 % / 30 s à 50 %) 25 min à 118–125 % (340–360 W), 5 min de récup entre les 2 séries · Z2 20 min · Retour au calme 10 min. Cadence 95-105 rpm.</div><div class="tip" style="border-color:#c9a227">Les premières répétitions doivent sembler faciles : la difficulté arrive à partir de la 6e.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="25.11" height="11.00" fill="#4f8068"/><rect x="25.71" y="0.62" width="16.54" height="21.38" fill="#6d2442"/><rect x="42.86" y="12.85" width="7.97" height="9.15" fill="#a9b9c1"/><rect x="51.43" y="0.62" width="16.54" height="21.38" fill="#6d2442"/><rect x="68.57" y="12.32" width="0.60" height="9.68" fill="#a9b9c1"/><rect x="68.57" y="10.56" width="33.69" height="11.44" fill="#4f8068"/><rect x="102.86" y="13.20" width="16.54" height="8.80" fill="#a9b9c1"/></svg><div class="mono dur">1 h 10</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">14 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · endurance de force</div><div class="sd">Squat gobelet, fentes, hip thrust, mollets en 3 × 12 · Nordic 2 × 5 · gainage lombo-pelvien.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — technique &amp; battement</div><div class="sd">Éducatifs crawl, 8 × 50 m jambes à la planche, 6 × 100 m avec palmes puis 4 × 100 m sans. Focus battement depuis la hanche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">15 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">16 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Samedi : sortie Z2 2 h (doublé)</div><div class="sd">Z2 régulier 2 h. Cadence 85-95 rpm.</div><div class="tip" style="border-color:#c9a227">Veille de la sortie longue : vraiment en Z2. C'est l'enchaînement qu'on travaille, pas l'intensité.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="119.40" height="11.62" fill="#4f8068"/></svg><div class="mono dur">2 h</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">17 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 3 h — solo tempo + Pol</div><div class="sd"><b>Solo 1 h 05</b> : échauffement Z2 15 min · 2 × 20 min tempo 50 min à 78–85 % (225–245 W). <b>Avec Pol 1 h 55</b> en bas de Z2, 56–62 % (161–179 W). Cadence 80-90 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="9.40" height="11.62" fill="#4f8068"/><rect x="10.00" y="7.66" width="12.73" height="14.34" fill="#c9a227"/><rect x="23.33" y="12.85" width="6.07" height="9.15" fill="#a9b9c1"/><rect x="30.00" y="7.66" width="12.73" height="14.34" fill="#c9a227"/><rect x="43.33" y="12.32" width="0.60" height="9.68" fill="#a9b9c1"/><rect x="43.33" y="11.62" width="76.07" height="10.38" fill="#4f8068"/></svg><div class="mono dur">3 h</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC A — BASE &amp; SWEET SPOT</div>
+      <div class="wbar"><div><b>S3</b><span class="mono">18 – 24 janvier</span></div><div class="chg">FORTE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div></div>
+      <div class="wdesc">Le sweet spot passe à 2 × 20 min. La sortie longue atteint 3h30 avec 3 × 20 min de tempo en solo.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">18 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sweet spot 2 × 20 min</div><div class="sd">Échauffement progressif 15 min · 2 × 20 min sweet spot 46 min à 88–94 % (253–271 W), récup 6 min à 55 % · Z2 + retour au calme 19 min. Cadence 85-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.44" width="21.90" height="10.56" fill="#4f8068"/><rect x="22.50" y="5.98" width="29.40" height="16.02" fill="#e07a1f"/><rect x="52.50" y="12.85" width="8.40" height="9.15" fill="#a9b9c1"/><rect x="61.50" y="5.98" width="29.40" height="16.02" fill="#e07a1f"/><rect x="91.50" y="11.18" width="27.90" height="10.82" fill="#4f8068"/></svg><div class="mono dur">1 h 20</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">19 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">20 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Force-vélocité</div><div class="sd">Échauffement progressif 15 min · 5 × 5 min force à 55-60 rpm 37 min à 80–85 % (230–245 W), récup 3 min à 55 %. Buste immobile, pas de déhanchement · 4 × 3 min tempo à 100 rpm 20 min à 76–82 % (219–236 W), récup 2 min. Bassin stable à haute cadence · Retour au calme 13 min. Cadence 55-60 rpm.</div><div class="tip" style="border-color:#c9a227">Les blocs à 55-60 rpm se font assis, sans à-coups. Si les genoux tirent, remonter la cadence immédiatement.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.44" width="20.58" height="10.56" fill="#4f8068"/><rect x="21.18" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="28.24" y="12.85" width="3.64" height="9.15" fill="#a9b9c1"/><rect x="32.47" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="39.53" y="12.85" width="3.64" height="9.15" fill="#a9b9c1"/><rect x="43.76" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="50.82" y="12.85" width="3.64" height="9.15" fill="#a9b9c1"/><rect x="55.06" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="62.12" y="12.85" width="3.64" height="9.15" fill="#a9b9c1"/><rect x="66.35" y="7.48" width="6.46" height="14.52" fill="#c9a227"/><rect x="73.41" y="8.10" width="3.64" height="13.90" fill="#c9a227"/><rect x="77.65" y="12.85" width="3.16" height="9.15" fill="#a9b9c1"/><rect x="81.41" y="8.10" width="3.64" height="13.90" fill="#c9a227"/><rect x="85.65" y="12.85" width="3.16" height="9.15" fill="#a9b9c1"/><rect x="89.41" y="8.10" width="3.64" height="13.90" fill="#c9a227"/><rect x="93.65" y="12.85" width="3.16" height="9.15" fill="#a9b9c1"/><rect x="97.41" y="8.10" width="3.64" height="13.90" fill="#c9a227"/><rect x="101.65" y="12.32" width="17.75" height="9.68" fill="#a9b9c1"/></svg><div class="mono dur">1 h 25</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">21 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · endurance de force</div><div class="sd">Squat gobelet, fentes, hip thrust, mollets en 3 × 12 · Nordic 2 × 5 · gainage lombo-pelvien.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — technique &amp; battement</div><div class="sd">Éducatifs crawl, 8 × 50 m jambes à la planche, 6 × 100 m avec palmes puis 4 × 100 m sans. Focus battement depuis la hanche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">22 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">23 janv.</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Repos</div><div class="sd">Repos complet ou marche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">24 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 3h30 — solo tempo + Pol</div><div class="sd"><b>Solo 1 h 30</b> : échauffement Z2 15 min · 3 × 20 min tempo 1 h 10 à 78–85 % (225–245 W) · Z2 jusqu'au rendez-vous 5 min. <b>Avec Pol 2 h</b> en bas de Z2, 56–62 % (161–179 W). Cadence 80-90 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="7.97" height="11.62" fill="#4f8068"/><rect x="8.57" y="7.66" width="10.83" height="14.34" fill="#c9a227"/><rect x="20.00" y="12.85" width="2.26" height="9.15" fill="#a9b9c1"/><rect x="22.86" y="7.66" width="10.83" height="14.34" fill="#c9a227"/><rect x="34.29" y="12.85" width="2.26" height="9.15" fill="#a9b9c1"/><rect x="37.14" y="7.66" width="10.83" height="14.34" fill="#c9a227"/><rect x="48.57" y="10.56" width="2.26" height="11.44" fill="#4f8068"/><rect x="51.43" y="11.62" width="67.97" height="10.38" fill="#4f8068"/></svg><div class="mono dur">3 h 30</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC A — BASE &amp; SWEET SPOT</div>
+      <div class="wbar"><div><b>S4</b><span class="mono">25 – 31 janvier</span></div><div class="chg">DÉCHARGE <span class="sq"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></div></div>
+      <div class="wdesc">Semaine de décharge, avec le test FTP n° 2 mercredi. Lundi souple, renfo allégé, aucune intensité en dehors du test.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">25 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Récupération active</div><div class="sd">Z1-Z2 souple 1 h. Cadence 90-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.88" width="119.40" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">26 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">27 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#c23b2b;color:#c23b2b">TEST</span></td>
+          <td class="cont"><div class="st">Test FTP 20 min (Rouvy, mode Slope)</div><div class="sd">Échauffement progressif 10 min · 3 × 1 min d'accélération 6 min à 70–80 % (202–230 W), puissance modérée, récup 1 min entre chaque · Récupération 5 min · Effort d'ouverture 5 min 5 min à 108–112 % (311–323 W), vide la composante anaérobie avant le test · Récupération 10 min · LE TEST — 20 min régulier 20 min à 100–108 % (288–311 W), partir 5 % sous la cible les 2 premières minutes. FTP = 95 % de la moyenne ; FC seuil = FC moyenne des minutes 5 à 20 · Retour au calme 10 min. Cadence 90 rpm.</div><div class="tip" style="border-color:#c9a227">Même protocole à chaque test, en mode Slope ou Level. Partir 5 % sous la cible les 2 premières minutes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="17.58" height="11.00" fill="#4f8068"/><rect x="18.18" y="8.80" width="10.31" height="13.20" fill="#4f8068"/><rect x="29.09" y="13.64" width="8.49" height="8.36" fill="#a9b9c1"/><rect x="38.18" y="2.64" width="8.49" height="19.36" fill="#6d2442"/><rect x="47.27" y="13.64" width="17.58" height="8.36" fill="#a9b9c1"/><rect x="65.45" y="3.70" width="35.76" height="18.30" fill="#c23b2b"/><rect x="101.82" y="13.64" width="17.58" height="8.36" fill="#a9b9c1"/></svg><div class="mono dur">1 h 06</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">28 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — version allégée</div><div class="sd">Poids du corps 2 × 10 et gainage. Aucune charge lourde cette semaine.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — semaine allégée</div><div class="sd">Nage libre souple, éducatifs et jambes avec palmes. Rien d'intense.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 15</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">29 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — version allégée</div><div class="sd">Tirage, rotation externe, Y-T-W en 2 tours · gainage.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">20 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">30 janv.</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Repos</div><div class="sd">Repos complet ou marche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">31 janv.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie souple 2 h (avec Pol)</div><div class="sd"><b>Solo 15 min</b> : mise en route 15 min. <b>Avec Pol 1 h 45</b> en bas de Z2, 56–62 % (161–179 W). Cadence 90 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.44" width="14.40" height="10.56" fill="#4f8068"/><rect x="15.00" y="11.62" width="104.40" height="10.38" fill="#4f8068"/></svg><div class="mono dur">2 h</div></td></tr>
+      </tbody></table>
+    </section><section class="page">
+    <div class="bhead"><span class="letter">B</span><div><h2 class="bt">BLOC B — SEUIL &amp; VO₂MAX</h2><div class="mono dim">1er – 28 février</div></div></div>
+    <p class="goal">Relever le plafond aérobie et rapprocher la FTP de 300 W.</p>
+    <div class="whybox"><div class="lbl">POURQUOI CE BLOC</div><p>Ta FTP stagne entre 270 et 290 W depuis 2023. Pour la faire monter, il faut relever le plafond (VO₂max, 5 × 3 à 5 × 4 min) et travailler directement au seuil (4 × 8, 3 × 12, over-unders). Le renfo passe en force (4 × 6, charges lourdes). La semaine de ski sert de coupure : pas de vélo, mais une vraie charge croisée.</p></div>
+    <h3>Les semaines de ce bloc</h3>
+    <table class="tt bw"><thead><tr><th>SEMAINE</th><th>CHARGE</th><th>SÉANCES VÉLO</th><th>VOLUME</th></tr></thead><tbody>
+    <tr><td><b class="wn">S5</b><div class="mono dim">1 – 7 février</div></td><td><div class="cl">MODÉRÉE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></td><td>Seuil 4 × 8 min · VO2max 5 × 3 min · Sortie longue 3h30 — solo tempo + Pol</td><td class="mono">5 h 55</td></tr><tr><td><b class="wn">S6</b><div class="mono dim">8 – 14 février</div></td><td><div class="cl">FORTE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td>Seuil 3 × 12 min · VO2max 5 × 4 min · Samedi : sortie Z2 2 h (doublé) · Sortie longue 4 h — solo tempo + Pol</td><td class="mono">8 h 35</td></tr><tr><td><b class="wn">S7</b><div class="mono dim">15 – 21 février</div></td><td><div class="cl">FORTE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td>Over-unders 3 × 12 min · VO2max 5 × 4 min</td><td class="mono">2 h 35</td></tr><tr><td><b class="wn">S8</b><div class="mono dim">22 – 28 février</div></td><td><div class="cl">COUPURE</div><span class="sq"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span></td><td>Sortie souple 2 h (avec Pol)</td><td class="mono">2 h</td></tr>
+    </tbody></table>
+  </section><section class="page week">
+      <div class="runner">BLOC B — SEUIL &amp; VO₂MAX</div>
+      <div class="wbar"><div><b>S5</b><span class="mono">1 – 7 février</span></div><div class="chg">MODÉRÉE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span></div></div>
+      <div class="wdesc">Nouvelles zones issues du test du 27/01. Premier seuil en 4 × 8 min et premiers 5 × 3 min de VO₂max. Le renfo passe en force.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">1 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Seuil 4 × 8 min</div><div class="sd">Échauffement progressif 15 min · 4 × 8 min au seuil 44 min à 96–102 % (276–294 W), récup 4 min à 55 % · Retour au calme 16 min. Cadence 88-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="23.40" height="11.00" fill="#4f8068"/><rect x="24.00" y="4.58" width="12.20" height="17.42" fill="#c23b2b"/><rect x="36.80" y="12.85" width="5.80" height="9.15" fill="#a9b9c1"/><rect x="43.20" y="4.58" width="12.20" height="17.42" fill="#c23b2b"/><rect x="56.00" y="12.85" width="5.80" height="9.15" fill="#a9b9c1"/><rect x="62.40" y="4.58" width="12.20" height="17.42" fill="#c23b2b"/><rect x="75.20" y="12.85" width="5.80" height="9.15" fill="#a9b9c1"/><rect x="81.60" y="4.58" width="12.20" height="17.42" fill="#c23b2b"/><rect x="94.40" y="12.32" width="25.00" height="9.68" fill="#a9b9c1"/></svg><div class="mono dur">1 h 15</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">2 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">3 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">VO2max 5 × 3 min</div><div class="sd">Échauffement progressif 15 min · 5 × 3 min VO2max 30 min à 110–115 % (317–331 W), récup 3 min à 50 % · Z2 15 min · Retour au calme 10 min. Cadence 95-105 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="25.11" height="11.00" fill="#4f8068"/><rect x="25.71" y="2.20" width="4.54" height="19.80" fill="#6d2442"/><rect x="30.86" y="12.85" width="5.83" height="9.15" fill="#a9b9c1"/><rect x="37.29" y="2.20" width="4.54" height="19.80" fill="#6d2442"/><rect x="42.43" y="12.85" width="5.83" height="9.15" fill="#a9b9c1"/><rect x="48.86" y="2.20" width="4.54" height="19.80" fill="#6d2442"/><rect x="54.00" y="12.85" width="5.83" height="9.15" fill="#a9b9c1"/><rect x="60.43" y="2.20" width="4.54" height="19.80" fill="#6d2442"/><rect x="65.57" y="12.85" width="5.83" height="9.15" fill="#a9b9c1"/><rect x="72.00" y="2.20" width="4.54" height="19.80" fill="#6d2442"/><rect x="77.14" y="10.56" width="25.11" height="11.44" fill="#4f8068"/><rect x="102.86" y="13.20" width="16.54" height="8.80" fill="#a9b9c1"/></svg><div class="mono dur">1 h 10</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">4 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · force</div><div class="sd">Force 4 × 6 lourd : squat ou SDT jambes tendues, fentes bulgares, step-up · Nordic 3 × 5 · gainage anti-rotation.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — endurance crawl</div><div class="sd">Jambes avec palmes, 4 × 200 m crawl régulier, 2 × 300 m pull-buoy. Endurance de nage.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">5 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">6 févr.</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Repos</div><div class="sd">Repos complet ou marche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">7 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 3h30 — solo tempo + Pol</div><div class="sd"><b>Solo 1 h 30</b> : échauffement Z2 15 min · 3 × 20 min tempo 1 h 10 à 78–85 % (225–245 W) · Z2 jusqu'au rendez-vous 5 min. <b>Avec Pol 2 h</b> en bas de Z2, 56–62 % (161–179 W). Cadence 80-90 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="7.97" height="11.62" fill="#4f8068"/><rect x="8.57" y="7.66" width="10.83" height="14.34" fill="#c9a227"/><rect x="20.00" y="12.85" width="2.26" height="9.15" fill="#a9b9c1"/><rect x="22.86" y="7.66" width="10.83" height="14.34" fill="#c9a227"/><rect x="34.29" y="12.85" width="2.26" height="9.15" fill="#a9b9c1"/><rect x="37.14" y="7.66" width="10.83" height="14.34" fill="#c9a227"/><rect x="48.57" y="10.56" width="2.26" height="11.44" fill="#4f8068"/><rect x="51.43" y="11.62" width="67.97" height="10.38" fill="#4f8068"/></svg><div class="mono dur">3 h 30</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC B — SEUIL &amp; VO₂MAX</div>
+      <div class="wbar"><div><b>S6</b><span class="mono">8 – 14 février</span></div><div class="chg">FORTE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div></div>
+      <div class="wdesc">Seuil 3 × 12, VO₂max 5 × 4 et doublé du week-end : la semaine la plus chargée du bloc B.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">8 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Seuil 3 × 12 min</div><div class="sd">Échauffement progressif 15 min · 3 × 12 min au seuil 48 min à 95–100 % (274–288 W), récup 6 min à 55 % · Retour au calme 17 min. Cadence 88-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="21.90" height="11.00" fill="#4f8068"/><rect x="22.50" y="4.84" width="17.40" height="17.16" fill="#c23b2b"/><rect x="40.50" y="12.85" width="8.40" height="9.15" fill="#a9b9c1"/><rect x="49.50" y="4.84" width="17.40" height="17.16" fill="#c23b2b"/><rect x="67.50" y="12.85" width="8.40" height="9.15" fill="#a9b9c1"/><rect x="76.50" y="4.84" width="17.40" height="17.16" fill="#c23b2b"/><rect x="94.50" y="12.32" width="24.90" height="9.68" fill="#a9b9c1"/></svg><div class="mono dur">1 h 20</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">9 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">10 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">VO2max 5 × 4 min</div><div class="sd">Échauffement progressif 15 min · 5 × 4 min VO2max 40 min à 108–115 % (311–331 W), récup 4 min à 50 % · Z2 + retour au calme 20 min. Cadence 95-105 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="23.40" height="11.00" fill="#4f8068"/><rect x="24.00" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="30.40" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="38.40" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="44.80" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="52.80" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="59.20" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="67.20" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="73.60" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="81.60" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="88.00" y="11.88" width="31.40" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h 15</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">11 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · force</div><div class="sd">Force 4 × 6 lourd : squat ou SDT jambes tendues, fentes bulgares, step-up · Nordic 3 × 5 · gainage anti-rotation.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — endurance crawl</div><div class="sd">Jambes avec palmes, 4 × 200 m crawl régulier, 2 × 300 m pull-buoy. Endurance de nage.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">12 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">13 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Samedi : sortie Z2 2 h (doublé)</div><div class="sd">Z2 régulier 2 h. Cadence 85-95 rpm.</div><div class="tip" style="border-color:#c9a227">Veille de la sortie longue : vraiment en Z2. C'est l'enchaînement qu'on travaille, pas l'intensité.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="119.40" height="11.62" fill="#4f8068"/></svg><div class="mono dur">2 h</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">14 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 4 h — solo tempo + Pol</div><div class="sd"><b>Solo 2 h</b> : Z2 30 min · 3 × 20 min tempo 1 h 10 à 78–87 % (225–251 W) · Z2 jusqu'au rendez-vous 20 min. <b>Avec Pol 2 h</b> en bas de Z2, 56–62 % (161–179 W). Cadence 80-90 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="14.40" height="11.62" fill="#4f8068"/><rect x="15.00" y="7.48" width="9.40" height="14.52" fill="#c9a227"/><rect x="25.00" y="12.85" width="1.90" height="9.15" fill="#a9b9c1"/><rect x="27.50" y="7.48" width="9.40" height="14.52" fill="#c9a227"/><rect x="37.50" y="12.85" width="1.90" height="9.15" fill="#a9b9c1"/><rect x="40.00" y="7.48" width="9.40" height="14.52" fill="#c9a227"/><rect x="50.00" y="10.38" width="9.40" height="11.62" fill="#4f8068"/><rect x="60.00" y="11.62" width="59.40" height="10.38" fill="#4f8068"/></svg><div class="mono dur">4 h</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC B — SEUIL &amp; VO₂MAX</div>
+      <div class="wbar"><div><b>S7</b><span class="mono">15 – 21 février</span></div><div class="chg">FORTE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div></div>
+      <div class="wdesc">Over-unders lundi, VO₂max mercredi, puis départ au ski. Pas de sortie longue ce dimanche : la journée de ski la remplace.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">15 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Over-unders 3 × 12 min</div><div class="sd">Échauffement progressif 15 min · 3 × 12 min : (2 min à 95 % + 1 min à 105 %) × 4 48 min à 95–105 % (274–302 W), récup 6 min à 55 %. Simule les relances en col · Retour au calme 17 min. Cadence 85-95 rpm.</div><div class="tip" style="border-color:#c9a227">Le retour à 95 % doit rester tenable ; sinon la cible est trop haute.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="21.90" height="11.00" fill="#4f8068"/><rect x="22.50" y="4.40" width="17.40" height="17.60" fill="#c23b2b"/><rect x="40.50" y="12.85" width="8.40" height="9.15" fill="#a9b9c1"/><rect x="49.50" y="4.40" width="17.40" height="17.60" fill="#c23b2b"/><rect x="67.50" y="12.85" width="8.40" height="9.15" fill="#a9b9c1"/><rect x="76.50" y="4.40" width="17.40" height="17.60" fill="#c23b2b"/><rect x="94.50" y="12.32" width="24.90" height="9.68" fill="#a9b9c1"/></svg><div class="mono dur">1 h 20</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">16 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">17 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">VO2max 5 × 4 min</div><div class="sd">Échauffement progressif 15 min · 5 × 4 min VO2max 40 min à 108–115 % (311–331 W), récup 4 min à 50 % · Z2 + retour au calme 20 min. Cadence 95-105 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="23.40" height="11.00" fill="#4f8068"/><rect x="24.00" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="30.40" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="38.40" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="44.80" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="52.80" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="59.20" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="67.20" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="73.60" y="12.85" width="7.40" height="9.15" fill="#a9b9c1"/><rect x="81.60" y="2.38" width="5.80" height="19.62" fill="#6d2442"/><rect x="88.00" y="11.88" width="31.40" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h 15</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">18 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · force</div><div class="sd">Force 4 × 6 lourd : squat ou SDT jambes tendues, fentes bulgares, step-up · Nordic 3 × 5 · gainage anti-rotation.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — endurance crawl</div><div class="sd">Jambes avec palmes, 4 × 200 m crawl régulier, 2 × 300 m pull-buoy. Endurance de nage.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">19 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">20 févr.</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Voyage / repos</div><div class="sd">Repos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">21 févr.</div></td>
+          <td class="slot mono">JOURNÉE</td>
+          <td class="tagc"><span class="tag" style="border-color:#b5739d;color:#b5739d">SKI</span></td>
+          <td class="cont"><div class="st">Ski — charge croisée</div><div class="sd">Pas de vélo structuré. Hydratation, sommeil, mobilité le soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC B — SEUIL &amp; VO₂MAX</div>
+      <div class="wbar"><div><b>S8</b><span class="mono">22 – 28 février</span></div><div class="chg">COUPURE <span class="sq"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span></div></div>
+      <div class="wdesc">Coupure vélo. Le ski est une vraie charge pour les jambes : mobilité 10 min chaque soir, sommeil et hydratation. Reprise dimanche avec Pol.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">22 févr.</div></td>
+          <td class="slot mono">JOURNÉE</td>
+          <td class="tagc"><span class="tag" style="border-color:#b5739d;color:#b5739d">SKI</span></td>
+          <td class="cont"><div class="st">Ski — charge croisée</div><div class="sd">Pas de vélo structuré. Hydratation, sommeil, mobilité le soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Mobilité 10 min (après ski)</div><div class="sd">Psoas, quadriceps, mollets, dos après la journée de ski.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">10 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mardi</b><div class="mono dim">23 févr.</div></td>
+          <td class="slot mono">JOURNÉE</td>
+          <td class="tagc"><span class="tag" style="border-color:#b5739d;color:#b5739d">SKI</span></td>
+          <td class="cont"><div class="st">Ski — charge croisée</div><div class="sd">Pas de vélo structuré. Hydratation, sommeil, mobilité le soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Mobilité 10 min (après ski)</div><div class="sd">Psoas, quadriceps, mollets, dos après la journée de ski.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">10 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">24 févr.</div></td>
+          <td class="slot mono">JOURNÉE</td>
+          <td class="tagc"><span class="tag" style="border-color:#b5739d;color:#b5739d">SKI</span></td>
+          <td class="cont"><div class="st">Ski — charge croisée</div><div class="sd">Pas de vélo structuré. Hydratation, sommeil, mobilité le soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Mobilité 10 min (après ski)</div><div class="sd">Psoas, quadriceps, mollets, dos après la journée de ski.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">10 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">25 févr.</div></td>
+          <td class="slot mono">JOURNÉE</td>
+          <td class="tagc"><span class="tag" style="border-color:#b5739d;color:#b5739d">SKI</span></td>
+          <td class="cont"><div class="st">Ski — charge croisée</div><div class="sd">Pas de vélo structuré. Hydratation, sommeil, mobilité le soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Mobilité 10 min (après ski)</div><div class="sd">Psoas, quadriceps, mollets, dos après la journée de ski.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">10 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Vendredi</b><div class="mono dim">26 févr.</div></td>
+          <td class="slot mono">JOURNÉE</td>
+          <td class="tagc"><span class="tag" style="border-color:#b5739d;color:#b5739d">SKI</span></td>
+          <td class="cont"><div class="st">Ski — charge croisée</div><div class="sd">Pas de vélo structuré. Hydratation, sommeil, mobilité le soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Mobilité 10 min (après ski)</div><div class="sd">Psoas, quadriceps, mollets, dos après la journée de ski.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">10 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">27 févr.</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Voyage / repos</div><div class="sd">Repos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">28 févr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie souple 2 h (avec Pol)</div><div class="sd"><b>Solo 15 min</b> : mise en route 15 min. <b>Avec Pol 1 h 45</b> en bas de Z2, 56–62 % (161–179 W). Cadence 90 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.44" width="14.40" height="10.56" fill="#4f8068"/><rect x="15.00" y="11.62" width="104.40" height="10.38" fill="#4f8068"/></svg><div class="mono dur">2 h</div></td></tr>
+      </tbody></table>
+    </section><section class="page">
+    <div class="bhead"><span class="letter">C</span><div><h2 class="bt">BLOC C — SPÉCIFIQUE VOLCANIQUE</h2><div class="mono dim">1er mars – 4 avril</div></div></div>
+    <p class="goal">Tenir la puissance en fin de sortie longue et en montée, cadence au moins 75 rpm.</p>
+    <div class="whybox"><div class="lbl">POURQUOI CE BLOC</div><p>En 2026, tu as perdu 14 % de puissance en seconde moitié, avec quatre arrêts dans le Rouvey. Ce bloc combine du seuil long (2 × 20 min), des over-unders qui reproduisent les variations de pente, et des sorties longues avec qualité en fin de partie solo, suivies de 2 h avec Pol. La sortie de 5 h en S12 est la répétition générale : ravitaillement, sodium, zéro arrêt subi.</p></div>
+    <h3>Les semaines de ce bloc</h3>
+    <table class="tt bw"><thead><tr><th>SEMAINE</th><th>CHARGE</th><th>SÉANCES VÉLO</th><th>VOLUME</th></tr></thead><tbody>
+    <tr><td><b class="wn">S9</b><div class="mono dim">1 – 7 mars</div></td><td><div class="cl">DÉCHARGE</div><span class="sq"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></td><td>Endurance + vélocité · Test FTP 20 min (Rouvy, mode Slope) · Sortie longue 3 h — reprise post-ski (solo + Pol)</td><td class="mono">5 h 21</td></tr><tr><td><b class="wn">S10</b><div class="mono dim">8 – 14 mars</div></td><td><div class="cl">FORTE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td>Seuil continu 2 × 20 min · VO2max 6 × 4 min · Samedi : sortie Z2 2 h (doublé) · Sortie longue 4 h — solo spécifique + Pol</td><td class="mono">8 h 50</td></tr><tr><td><b class="wn">S11</b><div class="mono dim">15 – 21 mars</div></td><td><div class="cl">FORTE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></td><td>Over-unders 3 × 12 min · Force-endurance en montée + vélocité · Sortie longue 4h30 — solo spécifique + Pol</td><td class="mono">7 h 15</td></tr><tr><td><b class="wn">S12</b><div class="mono dim">22 – 28 mars</div></td><td><div class="cl">TRÈS FORTE</div><span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></td><td>Seuil continu 2 × 20 min · VO2max 6 × 4 min · Sortie longue 5 h — répétition Volcanique (solo + Pol)</td><td class="mono">7 h 50</td></tr><tr><td><b class="wn">S13</b><div class="mono dim">29 mars – 4 avril</div></td><td><div class="cl">DÉCHARGE</div><span class="sq"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></td><td>Récupération active · Test FTP 20 min (Rouvy, mode Slope) · Sortie longue 2h30 (solo + Pol)</td><td class="mono">4 h 36</td></tr>
+    </tbody></table>
+  </section><section class="page week">
+      <div class="runner">BLOC C — SPÉCIFIQUE VOLCANIQUE</div>
+      <div class="wbar"><div><b>S9</b><span class="mono">1 – 7 mars</span></div><div class="chg">DÉCHARGE <span class="sq"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></div></div>
+      <div class="wdesc">Retour du ski : lundi d'endurance avec vélocité, test FTP n° 3 mercredi, renfo allégé. Les zones du bloc C partent de ce test.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">1 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Endurance + vélocité</div><div class="sd">Z2 continu 1 h · Retour au calme 15 min. Cadence 88-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="95.40" height="11.62" fill="#4f8068"/><rect x="96.00" y="13.20" width="23.40" height="8.80" fill="#a9b9c1"/></svg><div class="mono dur">1 h 15</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">2 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">3 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#c23b2b;color:#c23b2b">TEST</span></td>
+          <td class="cont"><div class="st">Test FTP 20 min (Rouvy, mode Slope)</div><div class="sd">Échauffement progressif 10 min · 3 × 1 min d'accélération 6 min à 70–80 % (202–230 W), puissance modérée, récup 1 min entre chaque · Récupération 5 min · Effort d'ouverture 5 min 5 min à 108–112 % (311–323 W), vide la composante anaérobie avant le test · Récupération 10 min · LE TEST — 20 min régulier 20 min à 100–108 % (288–311 W), partir 5 % sous la cible les 2 premières minutes. FTP = 95 % de la moyenne ; FC seuil = FC moyenne des minutes 5 à 20 · Retour au calme 10 min. Cadence 90 rpm.</div><div class="tip" style="border-color:#c9a227">Même protocole à chaque test, en mode Slope ou Level. Partir 5 % sous la cible les 2 premières minutes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="17.58" height="11.00" fill="#4f8068"/><rect x="18.18" y="8.80" width="10.31" height="13.20" fill="#4f8068"/><rect x="29.09" y="13.64" width="8.49" height="8.36" fill="#a9b9c1"/><rect x="38.18" y="2.64" width="8.49" height="19.36" fill="#6d2442"/><rect x="47.27" y="13.64" width="17.58" height="8.36" fill="#a9b9c1"/><rect x="65.45" y="3.70" width="35.76" height="18.30" fill="#c23b2b"/><rect x="101.82" y="13.64" width="17.58" height="8.36" fill="#a9b9c1"/></svg><div class="mono dur">1 h 06</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">4 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — version allégée</div><div class="sd">Poids du corps 2 × 10 et gainage. Aucune charge lourde cette semaine.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — allure &amp; seuil</div><div class="sd">Éducatifs, 10 × 100 m allure soutenue (noter les temps), 400 m continu sans palmes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">5 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">6 mars</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Repos</div><div class="sd">Repos complet ou marche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">7 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 3 h — reprise post-ski (solo + Pol)</div><div class="sd"><b>Solo 1 h 05</b> : Z2 30 min · 2 × 10 min tempo 25 min à 78–85 % (225–245 W) · Z2 souple 10 min. <b>Avec Pol 1 h 55</b> en bas de Z2, 56–62 % (161–179 W). Cadence 85-90 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="19.40" height="11.62" fill="#4f8068"/><rect x="20.00" y="7.66" width="6.07" height="14.34" fill="#c9a227"/><rect x="26.67" y="12.85" width="2.73" height="9.15" fill="#a9b9c1"/><rect x="30.00" y="7.66" width="6.07" height="14.34" fill="#c9a227"/><rect x="36.67" y="12.32" width="0.60" height="9.68" fill="#a9b9c1"/><rect x="36.67" y="11.44" width="6.07" height="10.56" fill="#4f8068"/><rect x="43.33" y="11.62" width="76.07" height="10.38" fill="#4f8068"/></svg><div class="mono dur">3 h</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC C — SPÉCIFIQUE VOLCANIQUE</div>
+      <div class="wbar"><div><b>S10</b><span class="mono">8 – 14 mars</span></div><div class="chg">FORTE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div></div>
+      <div class="wdesc">Seuil continu 2 × 20 min, VO₂max 6 × 4 min, et le dernier doublé du trimestre avec une sortie de 4 h.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">8 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Seuil continu 2 × 20 min</div><div class="sd">Échauffement progressif 15 min · 2 × 20 min au seuil 48 min à 95–100 % (274–288 W), récup 8 min à 55 %. Position de grimpeur, buste stable · Z2 + retour au calme 22 min. Cadence 85-92 rpm.</div><div class="tip" style="border-color:#c9a227">Position de grimpeur, mains en haut du cintre, buste stable. Le second bloc est le vrai test.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="20.58" height="11.00" fill="#4f8068"/><rect x="21.18" y="4.84" width="27.64" height="17.16" fill="#c23b2b"/><rect x="49.41" y="12.85" width="10.69" height="9.15" fill="#a9b9c1"/><rect x="60.71" y="4.84" width="27.64" height="17.16" fill="#c23b2b"/><rect x="88.94" y="11.88" width="30.46" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h 25</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">9 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">10 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">VO2max 6 × 4 min</div><div class="sd">Échauffement progressif 15 min · 6 × 4 min VO2max 48 min à 108–115 % (311–331 W), récup 4 min à 50 % · Z2 + retour au calme 22 min. Cadence 95-105 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="20.58" height="11.00" fill="#4f8068"/><rect x="21.18" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="26.82" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="33.60" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="39.25" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="46.02" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="51.67" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="58.45" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="64.09" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="70.87" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="76.52" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="83.29" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="88.94" y="11.88" width="30.46" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h 25</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">11 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · force explosive</div><div class="sd">Squat lourd 3 × 5 en contraste avec des squats sautés, fentes bulgares, step-up explosif · Nordic · gainage.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — allure &amp; seuil</div><div class="sd">Éducatifs, 10 × 100 m allure soutenue (noter les temps), 400 m continu sans palmes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">12 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">13 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Samedi : sortie Z2 2 h (doublé)</div><div class="sd">Z2 régulier 2 h. Cadence 85-95 rpm.</div><div class="tip" style="border-color:#c9a227">Veille de la sortie longue : vraiment en Z2. C'est l'enchaînement qu'on travaille, pas l'intensité.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.38" width="119.40" height="11.62" fill="#4f8068"/></svg><div class="mono dur">2 h</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">14 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 4 h — solo spécifique + Pol</div><div class="sd"><b>Solo 2 h</b> : Z2 avec montées à cadence ≥ 75 1 h 15 · 3 × 10 min sweet spot 45 min à 88–92 % (253–265 W). <b>Avec Pol 2 h</b> en bas de Z2, 56–62 % (161–179 W). Cadence ≥ 75 rpm.</div><div class="tip" style="border-color:#c9a227">Plafond 80 % de la FTP dans les côtes de la première partie : c'est le départ de la Volcanique qu'on apprend.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.12" width="36.90" height="11.88" fill="#4f8068"/><rect x="37.50" y="6.16" width="4.40" height="15.84" fill="#e07a1f"/><rect x="42.50" y="12.85" width="3.15" height="9.15" fill="#a9b9c1"/><rect x="46.25" y="6.16" width="4.40" height="15.84" fill="#e07a1f"/><rect x="51.25" y="12.85" width="3.15" height="9.15" fill="#a9b9c1"/><rect x="55.00" y="6.16" width="4.40" height="15.84" fill="#e07a1f"/><rect x="60.00" y="11.62" width="59.40" height="10.38" fill="#4f8068"/></svg><div class="mono dur">4 h</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC C — SPÉCIFIQUE VOLCANIQUE</div>
+      <div class="wbar"><div><b>S11</b><span class="mono">15 – 21 mars</span></div><div class="chg">FORTE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span></div></div>
+      <div class="wdesc">Force-endurance à 65-70 rpm (la cadence du Rouvey, mais tenue), puis 4h30 dont 2 × 15 min au seuil bas avant de retrouver Pol.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">15 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Over-unders 3 × 12 min</div><div class="sd">Échauffement progressif 15 min · 3 × 12 min : (2 min à 95 % + 1 min à 105 %) × 4 48 min à 95–105 % (274–302 W), récup 6 min à 55 %. Simule les relances en col · Retour au calme 17 min. Cadence 85-95 rpm.</div><div class="tip" style="border-color:#c9a227">Le retour à 95 % doit rester tenable ; sinon la cible est trop haute.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="21.90" height="11.00" fill="#4f8068"/><rect x="22.50" y="4.40" width="17.40" height="17.60" fill="#c23b2b"/><rect x="40.50" y="12.85" width="8.40" height="9.15" fill="#a9b9c1"/><rect x="49.50" y="4.40" width="17.40" height="17.60" fill="#c23b2b"/><rect x="67.50" y="12.85" width="8.40" height="9.15" fill="#a9b9c1"/><rect x="76.50" y="4.40" width="17.40" height="17.60" fill="#c23b2b"/><rect x="94.50" y="12.32" width="24.90" height="9.68" fill="#a9b9c1"/></svg><div class="mono dur">1 h 20</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">16 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">17 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Force-endurance en montée + vélocité</div><div class="sd">Échauffement progressif 15 min · 4 × 8 min à 88-92 % à 65-70 rpm 44 min à 88–92 % (253–265 W), récup 4 min. Cadence type « Rouvey » mais tenue au-dessus de 65 · 6 × 1 min à 110 rpm 12 min à 70–80 % (202–230 W), récup 1 min · Retour au calme 14 min. Cadence 65-70 rpm.</div><div class="tip" style="border-color:#c9a227">Cadence plancher 65 rpm : c'est l'anti-Rouvey. Sous 65, on baisse la puissance, pas la cadence.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.44" width="20.58" height="10.56" fill="#4f8068"/><rect x="21.18" y="6.16" width="10.69" height="15.84" fill="#e07a1f"/><rect x="32.47" y="12.85" width="5.05" height="9.15" fill="#a9b9c1"/><rect x="38.12" y="6.16" width="10.69" height="15.84" fill="#e07a1f"/><rect x="49.41" y="12.85" width="5.05" height="9.15" fill="#a9b9c1"/><rect x="55.06" y="6.16" width="10.69" height="15.84" fill="#e07a1f"/><rect x="66.35" y="12.85" width="5.05" height="9.15" fill="#a9b9c1"/><rect x="72.00" y="6.16" width="10.69" height="15.84" fill="#e07a1f"/><rect x="83.29" y="8.80" width="16.34" height="13.20" fill="#4f8068"/><rect x="100.24" y="12.32" width="19.16" height="9.68" fill="#a9b9c1"/></svg><div class="mono dur">1 h 25</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">18 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · force explosive</div><div class="sd">Squat lourd 3 × 5 en contraste avec des squats sautés, fentes bulgares, step-up explosif · Nordic · gainage.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — allure &amp; seuil</div><div class="sd">Éducatifs, 10 × 100 m allure soutenue (noter les temps), 400 m continu sans palmes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">19 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">20 mars</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Repos</div><div class="sd">Repos complet ou marche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">21 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 4h30 — solo spécifique + Pol</div><div class="sd"><b>Solo 2 h 30</b> : Z2 avec montées à cadence ≥ 75 1 h 45 · 2 × 15 min seuil bas 45 min à 90–95 % (259–274 W). <b>Avec Pol 2 h</b> en bas de Z2, 56–62 % (161–179 W). Cadence ≥ 75 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.12" width="46.07" height="11.88" fill="#4f8068"/><rect x="46.67" y="5.72" width="6.07" height="16.28" fill="#e07a1f"/><rect x="53.33" y="12.85" width="6.07" height="9.15" fill="#a9b9c1"/><rect x="60.00" y="5.72" width="6.07" height="16.28" fill="#e07a1f"/><rect x="66.67" y="11.62" width="52.73" height="10.38" fill="#4f8068"/></svg><div class="mono dur">4 h 30</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC C — SPÉCIFIQUE VOLCANIQUE</div>
+      <div class="wbar"><div><b>S12</b><span class="mono">22 – 28 mars</span></div><div class="chg">TRÈS FORTE <span class="sq"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div></div>
+      <div class="wdesc">La semaine la plus dure du plan. Dimanche, 5 h avec au moins 1 500 m de dénivelé et le dernier col au sweet spot : on teste le ravitaillement et l'objectif zéro arrêt.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">22 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Seuil continu 2 × 20 min</div><div class="sd">Échauffement progressif 15 min · 2 × 20 min au seuil 48 min à 95–100 % (274–288 W), récup 8 min à 55 %. Position de grimpeur, buste stable · Z2 + retour au calme 22 min. Cadence 85-92 rpm.</div><div class="tip" style="border-color:#c9a227">Position de grimpeur, mains en haut du cintre, buste stable. Le second bloc est le vrai test.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="20.58" height="11.00" fill="#4f8068"/><rect x="21.18" y="4.84" width="27.64" height="17.16" fill="#c23b2b"/><rect x="49.41" y="12.85" width="10.69" height="9.15" fill="#a9b9c1"/><rect x="60.71" y="4.84" width="27.64" height="17.16" fill="#c23b2b"/><rect x="88.94" y="11.88" width="30.46" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h 25</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">23 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">24 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">VO2max 6 × 4 min</div><div class="sd">Échauffement progressif 15 min · 6 × 4 min VO2max 48 min à 108–115 % (311–331 W), récup 4 min à 50 % · Z2 + retour au calme 22 min. Cadence 95-105 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="20.58" height="11.00" fill="#4f8068"/><rect x="21.18" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="26.82" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="33.60" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="39.25" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="46.02" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="51.67" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="58.45" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="64.09" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="70.87" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="76.52" y="12.85" width="6.18" height="9.15" fill="#a9b9c1"/><rect x="83.29" y="2.38" width="5.05" height="19.62" fill="#6d2442"/><rect x="88.94" y="11.88" width="30.46" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h 25</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">25 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — Bas du corps · force explosive</div><div class="sd">Squat lourd 3 × 5 en contraste avec des squats sautés, fentes bulgares, step-up explosif · Nordic · gainage.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">45 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — allure &amp; seuil</div><div class="sd">Éducatifs, 10 × 100 m allure soutenue (noter les temps), 400 m continu sans palmes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 30</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">26 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — Haut du corps &amp; gainage</div><div class="sd">Tirage, pompes, rotation externe d'épaule, Y-T-W · gainage des épaules. Aucun coût pour les jambes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">27 mars</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Repos</div><div class="sd">Repos complet ou marche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">28 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 5 h — répétition Volcanique (solo + Pol)</div><div class="sd"><b>Solo 3 h</b> : Z2 avec gros dénivelé (≥ 1 500 m D+) 2 h 30 à 60–78 % (173–225 W) · dernier col : 20-30 min à 88-92 % 30 min à 88–92 % (253–265 W). <b>Avec Pol 2 h</b> en bas de Z2, 56–62 % (161–179 W). Cadence ≥ 75 rpm.</div><div class="tip" style="border-color:#c9a227">Répétition générale : même petit-déjeuner, mêmes bidons et barres que le jour J. Objectif zéro arrêt subi.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="9.86" width="59.40" height="12.14" fill="#4f8068"/><rect x="60.00" y="6.16" width="11.40" height="15.84" fill="#e07a1f"/><rect x="72.00" y="11.62" width="47.40" height="10.38" fill="#4f8068"/></svg><div class="mono dur">5 h</div></td></tr>
+      </tbody></table>
+    </section><section class="page week">
+      <div class="runner">BLOC C — SPÉCIFIQUE VOLCANIQUE</div>
+      <div class="wbar"><div><b>S13</b><span class="mono">29 mars – 4 avril</span></div><div class="chg">DÉCHARGE <span class="sq"><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></span></div></div>
+      <div class="wdesc">Décharge et test FTP n° 4, le bilan du trimestre. Comparer avec le 19/12 : objectif au moins 295 W, en route vers les 300 W de juin.</div>
+      <table class="days"><tbody>
+      <tr class="first">
+          <td class="dcol" rowspan="2"><b>Lundi</b><div class="mono dim">29 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 1 — Mobilité &amp; activation</div><div class="sd">Réveil articulaire, activation des fessiers, gainage court. Prépare la séance vélo du soir.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">18 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Récupération active</div><div class="sd">Z1-Z2 souple 1 h. Cadence 90-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.88" width="119.40" height="10.12" fill="#4f8068"/></svg><div class="mono dur">1 h</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Mardi</b><div class="mono dim">30 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 3 — Étirements longs (assouplissement)</div><div class="sd">La séance d'assouplissement la plus complète : rouleau, psoas, quadriceps, ischios, fessiers, adducteurs, dos.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">25 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Mercredi</b><div class="mono dim">31 mars</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#5b9aa0;color:#5b9aa0">ÉVEIL</span></td>
+          <td class="cont"><div class="st">Éveil 2 — Mobilité douce &amp; thoracique</div><div class="sd">Colonne et épaules (open book, rotations au bâton), hanches. Prépare la natation du lendemain.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#5b9aa0"/></svg><div class="mono dur">15 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#c23b2b;color:#c23b2b">TEST</span></td>
+          <td class="cont"><div class="st">Test FTP 20 min (Rouvy, mode Slope)</div><div class="sd">Échauffement progressif 10 min · 3 × 1 min d'accélération 6 min à 70–80 % (202–230 W), puissance modérée, récup 1 min entre chaque · Récupération 5 min · Effort d'ouverture 5 min 5 min à 108–112 % (311–323 W), vide la composante anaérobie avant le test · Récupération 10 min · LE TEST — 20 min régulier 20 min à 100–108 % (288–311 W), partir 5 % sous la cible les 2 premières minutes. FTP = 95 % de la moyenne ; FC seuil = FC moyenne des minutes 5 à 20 · Retour au calme 10 min. Cadence 90 rpm.</div><div class="tip" style="border-color:#c9a227">Même protocole à chaque test, en mode Slope ou Level. Partir 5 % sous la cible les 2 premières minutes.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="11.00" width="17.58" height="11.00" fill="#4f8068"/><rect x="18.18" y="8.80" width="10.31" height="13.20" fill="#4f8068"/><rect x="29.09" y="13.64" width="8.49" height="8.36" fill="#a9b9c1"/><rect x="38.18" y="2.64" width="8.49" height="19.36" fill="#6d2442"/><rect x="47.27" y="13.64" width="17.58" height="8.36" fill="#a9b9c1"/><rect x="65.45" y="3.70" width="35.76" height="18.30" fill="#c23b2b"/><rect x="101.82" y="13.64" width="17.58" height="8.36" fill="#a9b9c1"/></svg><div class="mono dur">1 h 06</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="2"><b>Jeudi</b><div class="mono dim">1 avr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo A — version allégée</div><div class="sd">Poids du corps 2 × 10 et gainage. Aucune charge lourde cette semaine.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">30 min</div></td></tr><tr class="">
+          
+          <td class="slot mono">SOIR</td>
+          <td class="tagc"><span class="tag" style="border-color:#2f6e9c;color:#2f6e9c">NATATION</span></td>
+          <td class="cont"><div class="st">Natation — semaine allégée</div><div class="sd">Nage libre souple, éducatifs et jambes avec palmes. Rien d'intense.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#2f6e9c"/></svg><div class="mono dur">1 h 15</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Vendredi</b><div class="mono dim">2 avr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#3c4850;color:#3c4850">RENFO</span></td>
+          <td class="cont"><div class="st">Renfo B — version allégée</div><div class="sd">Tirage, rotation externe, Y-T-W en 2 tours · gainage.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="15" width="120" height="6" rx="1" fill="#3c4850"/></svg><div class="mono dur">20 min</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Samedi</b><div class="mono dim">3 avr.</div></td>
+          <td class="slot mono">—</td>
+          <td class="tagc"><span class="tag" style="border-color:#b0b0a8;color:#b0b0a8">REPOS</span></td>
+          <td class="cont"><div class="st">Repos</div><div class="sd">Repos complet ou marche.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0" y="18" width="120" height="3" fill="#d3d3cc"/></svg><div class="mono dur">—</div></td></tr><tr class="first">
+          <td class="dcol" rowspan="1"><b>Dimanche</b><div class="mono dim">4 avr.</div></td>
+          <td class="slot mono">MATIN</td>
+          <td class="tagc"><span class="tag" style="border-color:#7d8580;color:#7d8580">VÉLO</span></td>
+          <td class="cont"><div class="st">Sortie longue 2h30 (solo + Pol)</div><div class="sd"><b>Solo 40 min</b> : Z2 40 min. <b>Avec Pol 1 h 50</b> en bas de Z2, 56–62 % (161–179 W). Cadence 85-95 rpm.</div></td>
+          <td class="prof"><svg width="120" height="22"><rect x="0.00" y="10.21" width="31.40" height="11.79" fill="#4f8068"/><rect x="32.00" y="11.62" width="87.40" height="10.38" fill="#4f8068"/></svg><div class="mono dur">2 h 30</div></td></tr>
+      </tbody></table>
+    </section><section class="page"><h2>Les séances hors vélo, en détail</h2>
+  <p class="sub wide">Les pages semaine résument ; voici le contenu exact des éveils, du renforcement et de la natation.</p>
+  <h3>Éveils & assouplissement</h3><div class="libw" style="border-color:#5b9aa0"><div class="sth"><b>Éveil 1 — Mobilité &amp; activation</b><span class="mono dim">18 min</span></div>
+      <div class="libs"><span><b>Réveil articulaire</b> <span class="mono dim">5 min</span> — Chevilles, genoux, hanches, épaules en cercles</span><span><b>Activation des fessiers</b> <span class="mono dim">6 min</span> — Pont fessier 15, clamshell 12/côté, marche latérale à l'élastique</span><span><b>Gainage court</b> <span class="mono dim">5 min</span> — Planche 30 s, dead bug 10, bird dog 8/côté</span><span><b>Respiration</b> <span class="mono dim">2 min</span> — Respiration abdominale, 6 cycles lents</span></div></div><div class="libw" style="border-color:#5b9aa0"><div class="sth"><b>Éveil 2 — Mobilité douce &amp; thoracique</b><span class="mono dim">15 min</span></div>
+      <div class="libs"><span><b>Colonne</b> <span class="mono dim">5 min</span> — Chat-vache, open book 8/côté</span><span><b>Épaules (crawl)</b> <span class="mono dim">6 min</span> — Rotations au bâton, étirement des grands dorsaux, Y-T-W sans charge</span><span><b>Hanches</b> <span class="mono dim">4 min</span> — 90/90 lent, fente basse avec rotation</span></div></div><div class="libw" style="border-color:#5b9aa0"><div class="sth"><b>Éveil 3 — Étirements longs (assouplissement)</b><span class="mono dim">25 min</span></div>
+      <div class="libs"><span><b>Rouleau de massage</b> <span class="mono dim">5 min</span> — Quadriceps, fessiers, mollets, dos</span><span><b>Psoas &amp; quadriceps</b> <span class="mono dim">6 min</span> — Fente basse 45 s/côté, quadriceps allongé 45 s/côté</span><span><b>Ischios &amp; fessiers</b> <span class="mono dim">6 min</span> — Ischios à l'élastique, pigeon 60 s/côté</span><span><b>Adducteurs &amp; mollets</b> <span class="mono dim">4 min</span></span><span><b>Dos &amp; épaules</b> <span class="mono dim">4 min</span> — Posture de l'enfant, étirement pectoraux au mur</span></div></div><h3>Renforcement</h3><div class="libw" style="border-color:#3c4850"><div class="sth"><b>Renfo A — Bas du corps · endurance de force</b><span class="mono dim">45 min</span></div>
+      <div class="libs"><span><b>Activation</b> <span class="mono dim">6 min</span> — Corde à sauter ou vélo souple, mobilité des hanches</span><span><b>Bas du corps 3 × 12</b> <span class="mono dim">18 min</span> — Squat gobelet · Fentes arrière · Hip thrust · Mollets sur une jambe</span><span><b>Ischios : Nordic 2 × 5</b> <span class="mono dim">6 min</span> — Descente contrôlée, amplitude progressive</span><span><b>Gainage lombo-pelvien 3 tours</b> <span class="mono dim">15 min</span> — Dead bug 10 · Bird dog 10/côté · Planche latérale 30 s/côté · Pallof press 10/côté</span></div></div><div class="libw" style="border-color:#3c4850"><div class="sth"><b>Renfo A — Bas du corps · force</b><span class="mono dim">45 min</span></div>
+      <div class="libs"><span><b>Activation</b> <span class="mono dim">6 min</span> — Mobilité + 2 séries légères</span><span><b>Force 4 × 6, charge lourde</b> <span class="mono dim">22 min</span> — Squat ou soulevé de terre jambes tendues · Fentes bulgares · Step-up chargé. Récup 2 min</span><span><b>Ischios : Nordic 3 × 5</b> <span class="mono dim">7 min</span></span><span><b>Gainage anti-rotation 3 tours</b> <span class="mono dim">10 min</span> — Pallof press · Planche latérale avec élévation de jambe · Pont fessier unilatéral 10/côté</span></div></div><div class="libw" style="border-color:#3c4850"><div class="sth"><b>Renfo A — Bas du corps · force explosive</b><span class="mono dim">45 min</span></div>
+      <div class="libs"><span><b>Activation</b> <span class="mono dim">6 min</span></span><span><b>Force 3 × 5 + pliométrie</b> <span class="mono dim">20 min</span> — Squat lourd 3 × 5 en contraste avec 6 squats sautés · Fentes bulgares 3 × 6 · Step-up explosif</span><span><b>Ischios : Nordic 3 × 5</b> <span class="mono dim">7 min</span></span><span><b>Gainage 3 tours</b> <span class="mono dim">12 min</span> — Dead bug · Bird dog · Planche latérale 40 s</span></div></div><div class="libw" style="border-color:#3c4850"><div class="sth"><b>Renfo A — version allégée</b><span class="mono dim">30 min</span></div>
+      <div class="libs"><span><b>Activation</b> <span class="mono dim">6 min</span></span><span><b>Bas du corps au poids du corps 2 × 10</b> <span class="mono dim">12 min</span> — Squat · Fentes · Pont fessier</span><span><b>Gainage 2 tours</b> <span class="mono dim">12 min</span> — Dead bug · Bird dog · Planche latérale</span></div></div><div class="libw" style="border-color:#3c4850"><div class="sth"><b>Renfo B — Haut du corps &amp; gainage</b><span class="mono dim">30 min</span></div>
+      <div class="libs"><span><b>Haut du corps 3 tours</b> <span class="mono dim">18 min</span> — Tirage élastique ou rowing · Pompes · Rotation externe d'épaule · Y-T-W</span><span><b>Gainage des épaules</b> <span class="mono dim">8 min</span> — Planche avec touchers d'épaule · Planche latérale</span><span><b>Mobilité des épaules</b> <span class="mono dim">4 min</span></span></div></div><div class="libw" style="border-color:#3c4850"><div class="sth"><b>Renfo B — version allégée</b><span class="mono dim">20 min</span></div>
+      <div class="libs"><span><b>Haut du corps 2 tours</b> <span class="mono dim">12 min</span> — Tirage élastique · Rotation externe · Y-T-W</span><span><b>Gainage</b> <span class="mono dim">8 min</span></span></div></div><h3>Natation · jeudi soir</h3><div class="libw" style="border-color:#2f6e9c"><div class="sth"><b>Natation — technique &amp; battement</b><span class="mono dim">1 h 30</span></div>
+      <div class="libs"><span><b>Échauffement 400 m</b> <span class="mono dim">12 min</span> — 200 m crawl souple + 4 × 50 m jambes avec palmes</span><span><b>Éducatifs 8 × 50 m</b> <span class="mono dim">15 min</span> — Rattrapé, 3 temps, poing fermé, sculling. Récup 20 s</span><span><b>Battement 8 × 50 m jambes</b> <span class="mono dim">18 min</span> — Planche, palmes courtes : battement depuis la hanche, chevilles souples, petite amplitude</span><span><b>6 × 100 m crawl avec palmes</b> <span class="mono dim">20 min</span> — Focus : jambes continues, 6 battements par cycle de bras. Récup 20 s</span><span><b>4 × 100 m crawl sans palmes</b> <span class="mono dim">15 min</span> — Garder les sensations de jambes</span><span><b>Retour au calme 200 m</b> <span class="mono dim">10 min</span> — Dos / brasse souple</span></div></div><div class="libw" style="border-color:#2f6e9c"><div class="sth"><b>Natation — endurance crawl</b><span class="mono dim">1 h 30</span></div>
+      <div class="libs"><span><b>Échauffement 400 m</b> <span class="mono dim">12 min</span> — Crawl souple + 4 × 25 m éducatifs</span><span><b>Jambes 6 × 50 m (palmes)</b> <span class="mono dim">12 min</span> — Récup 15 s</span><span><b>Série principale 4 × 200 m crawl</b> <span class="mono dim">30 min</span> — Allure régulière, récup 30 s. Palmes autorisées sur le 4e</span><span><b>2 × 300 m pull-buoy</b> <span class="mono dim">18 min</span> — Travail des bras et de la glisse</span><span><b>8 × 25 m jambes sans palmes</b> <span class="mono dim">10 min</span></span><span><b>Retour au calme 200 m</b> <span class="mono dim">8 min</span></span></div></div><div class="libw" style="border-color:#2f6e9c"><div class="sth"><b>Natation — allure &amp; seuil</b><span class="mono dim">1 h 30</span></div>
+      <div class="libs"><span><b>Échauffement 400 m</b> <span class="mono dim">12 min</span> — Crawl + jambes avec palmes</span><span><b>Éducatifs 6 × 50 m</b> <span class="mono dim">10 min</span></span><span><b>10 × 100 m crawl allure soutenue</b> <span class="mono dim">30 min</span> — Récup 20 s. Viser des temps réguliers (noter le meilleur et le moins bon)</span><span><b>6 × 50 m jambes (palmes)</b> <span class="mono dim">12 min</span></span><span><b>400 m continu crawl</b> <span class="mono dim">14 min</span> — Sans palmes, rythme confortable</span><span><b>Retour au calme 200 m + étirements</b> <span class="mono dim">12 min</span></span></div></div><div class="libw" style="border-color:#2f6e9c"><div class="sth"><b>Natation — semaine allégée</b><span class="mono dim">1 h 15</span></div>
+      <div class="libs"><span><b>Nage libre souple</b> <span class="mono dim">30 min</span> — Alterner crawl, dos, brasse</span><span><b>Éducatifs + jambes avec palmes</b> <span class="mono dim">30 min</span> — Rien d'intense, uniquement la qualité du geste</span><span><b>Retour au calme</b> <span class="mono dim">15 min</span></span></div></div>
+</section><section class="page">
+  <div class="kicker">TESTS</div><h2 class="bt">FTP 20 MINUTES</h2>
+  <div class="mono dim">Samedi 19 décembre · Mercredi 27 janvier · Mercredi 3 mars · Mercredi 31 mars</div>
+  <p class="goal">Déterminer la FTP et la FC seuil, sur lesquelles sont construites toutes les plages du plan. Le protocole est reproduit à l'identique à chaque test : c'est la seule façon d'obtenir une comparaison qui veuille dire quelque chose.</p>
+  <div class="two"><div class="box"><div class="lbl">MATÉRIEL ET RÉGLAGES</div><p>Direto X en mode Slope ou Level, jamais ERG. Rouvy en simulation sur une montée régulière, ou parcours plat avec résistance réelle. Ventilateur obligatoire.</p></div>
+  <div class="box"><div class="lbl">AVANT DE COMMENCER</div><ul><li>Calibrer le Direto X après 10 minutes de pédalage, jamais à froid.</li><li>Pas d'alcool la veille, nuit normale, aucune séance dure dans les 48 h.</li><li>Repas léger 2 à 3 h avant.</li><li>Choisir le braquet à l'échauffement pour tenir la cible entre 85 et 90 rpm, puis ne plus y toucher.</li></ul></div></div>
+  <h3>Le protocole, bloc par bloc</h3>
+  <table class="tt proto"><tbody><tr class=""><td class="mono">10 min</td><td><b>Échauffement progressif</b></td><td class="mono">55–70 % · 158–202 W</td><td> Cadence 90 rpm.</td></tr><tr class=""><td class="mono">6 min</td><td><b>3 × 1 min d'accélération</b></td><td class="mono">70–80 % · 202–230 W</td><td>Puissance modérée, récup 1 min entre chaque Cadence 100-105 rpm.</td></tr><tr class=""><td class="mono">5 min</td><td><b>Récupération</b></td><td class="mono">40–55 % · 115–158 W</td><td> Cadence 90 rpm.</td></tr><tr class=""><td class="mono">5 min</td><td><b>Effort d'ouverture 5 min</b></td><td class="mono">108–112 % · 311–323 W</td><td>Vide la composante anaérobie avant le test Cadence 90 rpm.</td></tr><tr class=""><td class="mono">10 min</td><td><b>Récupération</b></td><td class="mono">40–55 % · 115–158 W</td><td>C'est long, c'est normal Cadence 90 rpm.</td></tr><tr class="hl"><td class="mono">20 min</td><td><b>LE TEST — 20 min régulier</b></td><td class="mono">100–108 % · 288–311 W</td><td>Partir 5 % sous la cible les 2 premières minutes. FTP = 95 % de la moyenne ; FC seuil = FC moyenne des minutes 5 à 20 Cadence 85-90 rpm.</td></tr><tr class=""><td class="mono">10 min</td><td><b>Retour au calme</b></td><td class="mono">40–55 % · 115–158 W</td><td> Cadence 90 rpm.</td></tr></tbody></table>
+  <h3>Stratégie d'exécution</h3>
+  <div class="pace"><b>Minutes 0 à 2</b><p>Partir 5 % SOUS la cible. C'est la consigne la plus difficile à respecter et la plus importante : ton biais documenté est de partir trop fort, à l'EDT comme sur la Volcanique.</p></div>
+  <div class="pace"><b>Minutes 2 à 10</b><p>Se stabiliser à la cible. La puissance doit être plate : regarder la moyenne glissante de 30 s, pas la valeur instantanée.</p></div>
+  <div class="pace"><b>Minutes 10 à 17</b><p>Tenir. Si c'est possible, monter de 2 à 3 %, pas plus.</p></div>
+  <div class="pace"><b>Minutes 17 à 20</b><p>Tout donner. C'est le seul moment où l'on accélère franchement.</p></div>
+  <p class="sub wide"><b>Résultat :</b> FTP = 95 % de la puissance moyenne des 20 minutes. FC seuil = FC moyenne des minutes 5 à 20. Saisir les deux dans l'application (Suivi → Tests FTP).</p>
+</section><section class="page">
+  <h2>Chaque type de séance, et pourquoi</h2>
+  <p class="sub wide">Huit familles de séances composent ce plan. Aucune n'est interchangeable : chacune produit une adaptation différente, sur une échelle de temps différente.</p>
+  <div class="stype" style="border-color:#4f8068"><div class="sth"><b>ENDURANCE Z2</b><span class="mono dim">56 – 75 % FTP</span></div>
+    <p><b>Format.</b> La sortie longue (surtout la partie avec Pol) et tout ce qui n'est pas une séance de qualité.</p><p><b>À quoi ça sert.</b> Densité mitochondriale, capillarisation, capacité à brûler les graisses. C'est le socle : sans lui, les séances dures ne se récupèrent pas et la durabilité ne se construit pas.</p><p><b>Le point de vigilance.</b> Effet lent, invisible d'une semaine à l'autre, décisif sur six mois. C'est la seule zone qu'on ne compresse jamais.</p></div><div class="stype" style="border-color:#c9a227"><div class="sth"><b>TEMPO Z3</b><span class="mono dim">76 – 87 % FTP</span></div>
+    <p><b>Format.</b> Blocs de 20 min dans la partie solo du dimanche.</p><p><b>À quoi ça sert.</b> Tolérance à l'effort soutenu et économie de pédalage. C'est l'allure réelle d'un col long comme Mézilhac.</p><p><b>Le point de vigilance.</b> Zone souvent négligée parce qu'elle n'est ni facile ni vraiment dure. Garder la cadence au-dessus de 80 rpm.</p></div><div class="stype" style="border-color:#e07a1f"><div class="sth"><b>SWEET SPOT</b><span class="mono dim">88 – 94 % FTP</span></div>
+    <p><b>Format.</b> Blocs de 12 à 20 min. Le format dominant du bloc A, puis la qualité finale des sorties longues du bloc C.</p><p><b>À quoi ça sert.</b> Le meilleur rapport entre stimulus et fatigue quand le volume en semaine est limité à 1h30.</p><p><b>Le point de vigilance.</b> En abuser crée une fatigue chronique sans relever le plafond. D'où le bloc B.</p></div><div class="stype" style="border-color:#c23b2b"><div class="sth"><b>SEUIL Z4</b><span class="mono dim">95 – 105 % FTP</span></div>
+    <p><b>Format.</b> Blocs de 8 à 20 min. Le cœur des blocs B et C.</p><p><b>À quoi ça sert.</b> Déplace directement la FTP en améliorant la clairance du lactate. C'est la zone la plus rentable du plan pour dépasser 300 W.</p><p><b>Le point de vigilance.</b> Aussi la plus coûteuse : deux séances de seuil par semaine au maximum, jamais deux jours de suite.</p></div><div class="stype" style="border-color:#c23b2b"><div class="sth"><b>OVER-UNDERS</b><span class="mono dim">95 % puis 105 %</span></div>
+    <p><b>Format.</b> 3 × 12 min, alternance 2 min dessous / 1 min dessus.</p><p><b>À quoi ça sert.</b> Apprend à évacuer le lactate en roulant. C'est exactement la contrainte d'un col dont la pente varie, comme le Rouvey.</p><p><b>Le point de vigilance.</b> Le retour à 95 % doit rester tenable ; sinon la cible est trop haute.</p></div><div class="stype" style="border-color:#6d2442"><div class="sth"><b>VO₂MAX</b><span class="mono dim">106 – 120 % FTP</span></div>
+    <p><b>Format.</b> 30/30, puis 5 × 3, 5 × 4 et 6 × 4 min.</p><p><b>À quoi ça sert.</b> Relève le plafond aérobie. Sans lui, la FTP plafonne parce qu'elle ne peut pas dépasser un certain pourcentage de la VO₂max.</p><p><b>Le point de vigilance.</b> Cadence 95-105 rpm. Le mode ERG est acceptable pour ces séances.</p></div><div class="stype" style="border-color:#c9a227"><div class="sth"><b>FORCE-VÉLOCITÉ &amp; CADENCE</b><span class="mono dim">Z3, cadence imposée</span></div>
+    <p><b>Format.</b> Blocs à 55-70 rpm alternés avec de la haute cadence (100-110 rpm).</p><p><b>À quoi ça sert.</b> Un problème mécanique plus qu'énergétique : sur la Volcanique, la cadence est tombée à 56-72 rpm dans le Rouvey. On travaille le geste et la stabilité du bassin.</p><p><b>Le point de vigilance.</b> Buste immobile, pas de déhanchement. Si les genoux tirent, remonter la cadence immédiatement.</p></div><div class="stype" style="border-color:#4f8068"><div class="sth"><b>SORTIE LONGUE SOLO + POL</b><span class="mono dim">Qualité en solo, puis 56-62 %</span></div>
+    <p><b>Format.</b> Partie solo avec toute l'intensité, puis 1h45 à 2h avec Pol en bas de Z2.</p><p><b>À quoi ça sert.</b> La durabilité : produire encore de la puissance après 4 à 6 h de selle. C'est ce qui a manqué au-delà du km 100 de la Volcanique.</p><p><b>Le point de vigilance.</b> Partie avec Pol vraiment facile, même si les jambes vont bien. S'alimenter toutes les 30 min dès la partie solo.</p></div>
+</section><section class="page">
+  <h2>Comment elles se combinent</h2>
+  <p class="sub wide">Cinq principes gouvernent l'assemblage. Ils expliquent la semaine type et l'ordre des trois blocs.</p>
+  <div class="rule"><b>La règle du 80/20</b> — Environ 80 % du temps en Z1-Z2 et 20 % au-dessus. La partie avec Pol et les échauffements font l'essentiel du volume facile ; lundi, mercredi et la partie solo font l'intensité.</div><div class="rule"><b>Jamais deux jours durs consécutifs</b> — D'où lundi et mercredi, séparés par un mardi d'assouplissement, et le renfo lourd le jeudi, sans vélo.</div><div class="rule"><b>L'ordre des blocs n'est pas arbitraire</b> — Sweet spot pour reconstruire la base, seuil et VO₂max pour relever le plafond et la FTP, puis spécifique Volcanique pour tenir cette puissance en fin de sortie longue.</div><div class="rule"><b>Trois semaines de charge, une de décharge</b> — Les décharges tombent en S4, S8 (ski), S9 (reprise) et S13. C'est pendant celles-là que les adaptations se matérialisent.</div><div class="rule"><b>La sortie longue ne se remplace jamais par de l'intensité</b> — Deux heures de sweet spot ne remplacent pas quatre heures de selle. Ce sont deux adaptations différentes.</div>
+  <h2>Les six règles du trimestre</h2>
+  <div class="rule"><b>Mode Slope ou Level, jamais ERG</b> — pour les quatre tests, sans exception. Pour les séances de VO₂max courtes, l'ERG est acceptable.</div><div class="rule"><b>Le renfo passe le matin, le vélo le soir</b> — jamais l'inverse, et jamais de travail lourd des jambes la veille d'une séance de qualité.</div><div class="rule"><b>Home trainer : 2 h maximum</b> — même le dimanche. Dehors, on cherche la durée ; dedans, on cherche la densité.</div><div class="rule"><b>Une séance ratée ne se rattrape pas</b> — on la saute et on reprend le fil. Les séances sacrifiables, dans l'ordre : le renfo B, l'éveil, puis la séance vélo du mercredi.</div><div class="rule"><b>Les zones se recalent après chaque test</b> — travailler sur des plages périmées est la première cause de plateau. L'application recalcule les watts dès que la FTP est mise à jour.</div><div class="rule"><b>Trois signaux d'alerte</b> — FC de repos élevée trois matins de suite, sommeil dégradé, ou puissance en chute sur une séance facile. Un seul suffit pour transformer la semaine en décharge.</div>
+  <h2>Ce qui reste à caler</h2>
+  <div class="rule"><b>Date de l'Ardéchoise 2027</b> — le 19 juin est une hypothèse (la Volcanique 2026 avait lieu le 13 juin). À confirmer dès l'ouverture des inscriptions.</div><div class="rule"><b>Test du 19 décembre</b> — il fixe la FTP et la FC seuil de départ. Saisir le résultat dans l'application : tous les watts du plan se recalculent.</div><div class="rule"><b>Piscine pendant les vacances</b> — vérifier les horaires du jeudi soir pendant les vacances d'hiver. La semaine de ski (S8) n'a pas de natation.</div><div class="rule"><b>Pol</b> — caler chaque semaine l'heure du rendez-vous du dimanche, pour que la partie solo soit faite avant de le retrouver.</div>
+  <div class="endnote mono">Plan T1-2027 · 4 janvier – 4 avril 2027 · version de l'application : https://frederictillier-design.github.io/Mon-Plan-T1-2027/</div>
+</section></body></html>

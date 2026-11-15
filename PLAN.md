@@ -9,13 +9,14 @@
 
 ## Principes
 
-- Lundi et mercredi : séances de qualité sur home trainer (Rouvy), 1h30 maximum.
-- Jeudi : piscine 1h30 (technique crawl, battement de jambes, endurance).
-- Dimanche : sortie longue en 2 parties. D'abord une partie solo, qui contient toute l'intensité. Puis 1h45 à 2h avec Pol en bas de Z2 (56-62 % de la FTP), qui prolonge l'endurance sur jambes fatiguées. Si la météo est mauvaise : partie solo sur home trainer, partie avec Pol dehors si possible. Un samedi par mois : sortie Z2 en plus, pour enchaîner deux jours de vélo.
-- Mardi : renforcement et PPG (vélo + natation), 45 min. Vendredi : assouplissement et mobilité, 30 min.
-- Cycles de 3 semaines de charge + 1 semaine allégée. La semaine de ski (20-27 février) remplace la semaine de récupération vélo du bloc 2.
-- Tests FTP : 19/12 (point de départ), 27/01, 03/03 et 31/03. Après chaque test, mettre à jour la FTP dans Réglages : toutes les cibles en watts se recalculent.
-- Cadence : viser 85-95 rpm en intérieur et au moins 75 rpm en montée. Une cadence sous 60 rpm doit alerter (leçon de l'EDT 2026).
+- Lundi et mercredi soir : séances de qualité sur home trainer (Rouvy), 1h30 maximum.
+- Renforcement et éveils le matin, vélo le soir. Jamais de travail lourd des jambes la veille d'une séance de qualité.
+- Jeudi : renfo A (bas du corps) le matin, piscine 1h30 le soir. Vendredi : renfo B (haut du corps). Mardi : éveil 3, assouplissement long.
+- Dimanche : sortie longue en 2 parties. D'abord une partie solo, qui contient toute l'intensité. Puis 1h45 à 2h avec Pol en bas de Z2 (56-62 % de la FTP). Si la météo est mauvaise : partie solo sur home trainer (2 h maximum), partie avec Pol dehors si possible.
+- Un samedi par mois (16/01, 13/02, 13/03) : sortie Z2 en plus, pour enchaîner deux jours de vélo.
+- Cycles de 3 semaines de charge + 1 semaine allégée. La semaine de ski (20-27 février) sert de coupure vélo pour le bloc B.
+- Tests FTP : 19/12 (point de départ), 27/01, 03/03 et 31/03, toujours avec le même protocole. Après chaque test, mettre à jour la FTP dans Réglages : toutes les cibles en watts se recalculent.
+- Cadence : 85-95 rpm en intérieur et au moins 75 rpm en montée. Une cadence sous 60 rpm doit alerter (leçon de l'EDT 2026).
 - Poids : déficit modéré (~300-400 kcal/j) les jours faciles, pas de déficit les jours de qualité et de sortie longue, protéines ~1,6-2 g/kg. Objectif −0,7 kg/mois.
 
 ## Zones de puissance (FTP 288 W)
@@ -27,60 +28,60 @@
 | Z3 — Tempo | 76–87 % | 219–251 W |
 | SS — Sweet spot | 88–94 % | 253–271 W |
 | Z4 — Seuil | 95–105 % | 274–302 W |
-| Z5 — VO2max | 106–120 % | 305–346 W |
+| Z5 — VO₂max | 106–120 % | 305–346 W |
 | Z6 — Anaérobie | 121–150 % | 348–432 W |
 
 ## Vue d'ensemble
 
 | Sem. | Dates | Type | Thème | Vélo | Total |
 |---|---|---|---|---|---|
-| S1 | 4 janv. → 10 janv. | Charge | Reprise structurée | 5h10 | 7h55 |
-| S2 | 11 janv. → 17 janv. | Charge | Sweet spot + premier doublé | 7h35 | 10h20 |
-| S3 | 18 janv. → 24 janv. | Charge | Pic du bloc 1 | 6h15 | 9h |
-| S4 | 25 janv. → 31 janv. | Allégée | Semaine allégée + test FTP (mer. 27/01) | 4h05 | 6h20 |
-| S5 | 1 févr. → 7 févr. | Charge | Entrée en seuil | 5h55 | 8h40 |
-| S6 | 8 févr. → 14 févr. | Charge | Seuil + VO2max + doublé | 8h35 | 11h20 |
-| S7 | 15 févr. → 21 févr. | Charge | Pic du bloc 2 · départ au ski samedi | 2h35 | 5h20 |
-| S8 | 22 févr. → 28 févr. | Ski | Semaine de ski — récupération croisée | 2h | 2h50 |
-| S9 | 1 mars → 7 mars | Reprise + test | Reprise + test FTP (mer. 03/03) | 5h20 | 7h50 |
-| S10 | 8 mars → 14 mars | Charge | Seuil long + fatigue + doublé | 8h50 | 11h35 |
-| S11 | 15 mars → 21 mars | Charge | Spécifique montée | 7h15 | 10h |
-| S12 | 22 mars → 28 mars | Charge | Pic du trimestre — répétition Volcanique | 7h50 | 10h35 |
-| S13 | 29 mars → 4 avr. | Allégée | Semaine allégée + test FTP (mer. 31/03) | 4h35 | 6h50 |
+| S1 | 4 janv. → 10 janv. | Charge | Reprise structurée | 5h10 | 8h53 |
+| S2 | 11 janv. → 17 janv. | Charge | Sweet spot + premier doublé | 7h35 | 11h18 |
+| S3 | 18 janv. → 24 janv. | Charge | Pic du bloc A | 6h15 | 9h58 |
+| S4 | 25 janv. → 31 janv. | Allégée | Décharge + test FTP (mer. 27/01) | 4h06 | 7h09 |
+| S5 | 1 févr. → 7 févr. | Charge | Entrée en seuil | 5h55 | 9h38 |
+| S6 | 8 févr. → 14 févr. | Charge | Seuil + VO₂max + doublé | 8h35 | 12h18 |
+| S7 | 15 févr. → 21 févr. | Charge | Pic du bloc B · départ au ski samedi | 2h35 | 6h18 |
+| S8 | 22 févr. → 28 févr. | Ski | Semaine de ski — coupure vélo | 2h | 2h50 |
+| S9 | 1 mars → 7 mars | Reprise + test | Reprise + test FTP (mer. 03/03) | 5h21 | 8h49 |
+| S10 | 8 mars → 14 mars | Charge | Seuil long + fatigue + doublé | 8h50 | 12h33 |
+| S11 | 15 mars → 21 mars | Charge | Spécifique montée | 7h15 | 10h58 |
+| S12 | 22 mars → 28 mars | Charge | Pic du trimestre — répétition Volcanique | 7h50 | 11h33 |
+| S13 | 29 mars → 4 avr. | Allégée | Décharge + test FTP (mer. 31/03) | 4h36 | 7h39 |
 
-## Bloc 1 — Base & sweet spot
+## Bloc A — Base & sweet spot
 
 Volume aérobie, sweet spot, force-vélocité, renforcement en endurance de force (3 × 12).
 
 | Sem. | Lun | Mar | Mer | Jeu | Ven | Sam | Dim |
 |---|---|---|---|---|---|---|---|
-| **S1** (4 janv.) | Sweet spot 3 × 12 min | PPG — endurance de force (3 × 12) | Force-vélocité | Natation — technique & battement | Assouplissement & mobilité 30 min | Repos | Sortie longue 2h30 (solo + Pol) |
-| **S2** (11 janv.) | Sweet spot 3 × 15 min | PPG — endurance de force (3 × 12) | VO2max 30/30 — 2 × 10 | Natation — technique & battement | Assouplissement & mobilité 30 min | Samedi : sortie Z2 2 h (doublé) | Sortie longue 3 h — solo tempo + Pol |
-| **S3** (18 janv.) | Sweet spot 2 × 20 min | PPG — endurance de force (3 × 12) | Force-vélocité | Natation — technique & battement | Assouplissement & mobilité 30 min | Repos | Sortie longue 3h30 — solo tempo + Pol |
-| **S4** (25 janv.) | Récupération active | PPG allégée — gainage & mobilité | Test FTP 20 min (Rouvy) | Natation — semaine allégée | Assouplissement & mobilité 30 min | Repos | Sortie souple 2 h (avec Pol) |
+| **S1** (4 janv.) | Éveil 1 — Mobilité & activation + Sweet spot 3 × 12 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + Force-vélocité | Renfo A — Bas du corps · endurance de force + Natation — technique & battement | Renfo B — Haut du corps & gainage | Repos | Sortie longue 2h30 (solo + Pol) |
+| **S2** (11 janv.) | Éveil 1 — Mobilité & activation + Sweet spot 3 × 15 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + VO2max 30/30 — 2 × 10 | Renfo A — Bas du corps · endurance de force + Natation — technique & battement | Renfo B — Haut du corps & gainage | Samedi : sortie Z2 2 h (doublé) | Sortie longue 3 h — solo tempo + Pol |
+| **S3** (18 janv.) | Éveil 1 — Mobilité & activation + Sweet spot 2 × 20 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + Force-vélocité | Renfo A — Bas du corps · endurance de force + Natation — technique & battement | Renfo B — Haut du corps & gainage | Repos | Sortie longue 3h30 — solo tempo + Pol |
+| **S4** (25 janv.) | Éveil 1 — Mobilité & activation + Récupération active | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + Test FTP 20 min (Rouvy, mode Slope) | Renfo A — version allégée + Natation — semaine allégée | Renfo B — version allégée | Repos | Sortie souple 2 h (avec Pol) |
 
-## Bloc 2 — Seuil & VO2max
+## Bloc B — Seuil & VO₂max
 
 Seuil et VO2max (le levier pour dépasser 300 W), renforcement en force (4 × 6). Semaine de ski en récupération active.
 
 | Sem. | Lun | Mar | Mer | Jeu | Ven | Sam | Dim |
 |---|---|---|---|---|---|---|---|
-| **S5** (1 févr.) | Seuil 4 × 8 min | PPG — force (4 × 6) | VO2max 5 × 3 min | Natation — endurance crawl | Assouplissement & mobilité 30 min | Repos | Sortie longue 3h30 — solo tempo + Pol |
-| **S6** (8 févr.) | Seuil 3 × 12 min | PPG — force (4 × 6) | VO2max 5 × 4 min | Natation — endurance crawl | Assouplissement & mobilité 30 min | Samedi : sortie Z2 2 h (doublé) | Sortie longue 4 h — solo tempo + Pol |
-| **S7** (15 févr.) | Over-unders 3 × 12 min | PPG — force (4 × 6) | VO2max 5 × 4 min | Natation — endurance crawl | Assouplissement & mobilité 30 min | Voyage / repos | Ski (récupération active croisée) |
-| **S8** (22 févr.) | Ski (récupération active croisée) + Mobilité 10 min | Ski (récupération active croisée) + Mobilité 10 min | Ski (récupération active croisée) + Mobilité 10 min | Ski (récupération active croisée) + Mobilité 10 min | Ski (récupération active croisée) + Mobilité 10 min | Voyage / repos | Sortie souple 2 h (avec Pol) |
+| **S5** (1 févr.) | Éveil 1 — Mobilité & activation + Seuil 4 × 8 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + VO2max 5 × 3 min | Renfo A — Bas du corps · force + Natation — endurance crawl | Renfo B — Haut du corps & gainage | Repos | Sortie longue 3h30 — solo tempo + Pol |
+| **S6** (8 févr.) | Éveil 1 — Mobilité & activation + Seuil 3 × 12 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + VO2max 5 × 4 min | Renfo A — Bas du corps · force + Natation — endurance crawl | Renfo B — Haut du corps & gainage | Samedi : sortie Z2 2 h (doublé) | Sortie longue 4 h — solo tempo + Pol |
+| **S7** (15 févr.) | Éveil 1 — Mobilité & activation + Over-unders 3 × 12 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + VO2max 5 × 4 min | Renfo A — Bas du corps · force + Natation — endurance crawl | Renfo B — Haut du corps & gainage | Voyage / repos | Ski — charge croisée |
+| **S8** (22 févr.) | Ski — charge croisée + Mobilité 10 min (après ski) | Ski — charge croisée + Mobilité 10 min (après ski) | Ski — charge croisée + Mobilité 10 min (après ski) | Ski — charge croisée + Mobilité 10 min (après ski) | Ski — charge croisée + Mobilité 10 min (après ski) | Voyage / repos | Sortie souple 2 h (avec Pol) |
 
-## Bloc 3 — Spécifique montée
+## Bloc C — Spécifique Volcanique
 
 Seuil long, over-unders, résistance à la fatigue en fin de sortie longue, cadence en montée. Renforcement en force explosive / maintien.
 
 | Sem. | Lun | Mar | Mer | Jeu | Ven | Sam | Dim |
 |---|---|---|---|---|---|---|---|
-| **S9** (1 mars) | Endurance + vélocité | PPG allégée — gainage & mobilité | Test FTP 20 min (Rouvy) | Natation — allure & seuil | Assouplissement & mobilité 30 min | Repos | Sortie longue 3 h — reprise post-ski (solo + Pol) |
-| **S10** (8 mars) | Seuil continu 2 × 20 min | PPG — force explosive & maintien | VO2max 6 × 4 min | Natation — allure & seuil | Assouplissement & mobilité 30 min | Samedi : sortie Z2 2 h (doublé) | Sortie longue 4 h — solo spécifique + Pol |
-| **S11** (15 mars) | Over-unders 3 × 12 min | PPG — force explosive & maintien | Force-endurance en montée + vélocité | Natation — allure & seuil | Assouplissement & mobilité 30 min | Repos | Sortie longue 4h30 — solo spécifique + Pol |
-| **S12** (22 mars) | Seuil continu 2 × 20 min | PPG — force explosive & maintien | VO2max 6 × 4 min | Natation — allure & seuil | Assouplissement & mobilité 30 min | Repos | Sortie longue 5 h — répétition Volcanique (solo + Pol) |
-| **S13** (29 mars) | Récupération active | PPG allégée — gainage & mobilité | Test FTP 20 min (Rouvy) | Natation — semaine allégée | Assouplissement & mobilité 30 min | Repos | Sortie longue 2h30 (solo + Pol) |
+| **S9** (1 mars) | Éveil 1 — Mobilité & activation + Endurance + vélocité | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + Test FTP 20 min (Rouvy, mode Slope) | Renfo A — version allégée + Natation — allure & seuil | Renfo B — Haut du corps & gainage | Repos | Sortie longue 3 h — reprise post-ski (solo + Pol) |
+| **S10** (8 mars) | Éveil 1 — Mobilité & activation + Seuil continu 2 × 20 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + VO2max 6 × 4 min | Renfo A — Bas du corps · force explosive + Natation — allure & seuil | Renfo B — Haut du corps & gainage | Samedi : sortie Z2 2 h (doublé) | Sortie longue 4 h — solo spécifique + Pol |
+| **S11** (15 mars) | Éveil 1 — Mobilité & activation + Over-unders 3 × 12 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + Force-endurance en montée + vélocité | Renfo A — Bas du corps · force explosive + Natation — allure & seuil | Renfo B — Haut du corps & gainage | Repos | Sortie longue 4h30 — solo spécifique + Pol |
+| **S12** (22 mars) | Éveil 1 — Mobilité & activation + Seuil continu 2 × 20 min | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + VO2max 6 × 4 min | Renfo A — Bas du corps · force explosive + Natation — allure & seuil | Renfo B — Haut du corps & gainage | Repos | Sortie longue 5 h — répétition Volcanique (solo + Pol) |
+| **S13** (29 mars) | Éveil 1 — Mobilité & activation + Récupération active | Éveil 3 — Étirements longs (assouplissement) | Éveil 2 — Mobilité douce & thoracique + Test FTP 20 min (Rouvy, mode Slope) | Renfo A — version allégée + Natation — semaine allégée | Renfo B — version allégée | Repos | Sortie longue 2h30 (solo + Pol) |
 
 ## Bibliothèque des séances
 
@@ -188,7 +189,7 @@ Seuil long, over-unders, résistance à la fatigue en fin de sortie longue, cade
 
 **Sortie longue 2h30 (solo + Pol)** — 2h30 (extérieur si possible)
 
-- Solo — Z2 — 40 min — **179–207 W** (62–72 %) — 85-95 rpm · _Home trainer si météo_
+- Solo — Z2 — 40 min — **179–207 W** (62–72 %) — 85-95 rpm · _Home trainer si météo (2 h maximum)_
 - Avec Pol — bas de Z2 — 1h50 — **161–179 W** (56–62 %) — 85-95 rpm · _Rythme de Pol : rester en bas de Z2, aucune intensité. Bonne occasion de travailler la cadence et l'alimentation_
 
 **Sortie longue 3 h — solo tempo + Pol** — 3h (extérieur si possible)
@@ -238,12 +239,15 @@ Seuil long, over-unders, résistance à la fatigue en fin de sortie longue, cade
 
 ### Test
 
-**Test FTP 20 min (Rouvy)** — 1h05
+**Test FTP 20 min (Rouvy, mode Slope)** — 1h06
 
-- Échauffement — 20 min — **144–216 W** (50–75 %) — 90 rpm · _Inclure 3 × 1 min à 105 % et 1 effort de 5 min à 100 %_
-- Récup — 8 min — **130–158 W** (45–55 %) — 90 rpm
-- 20 min à fond, effort régulier — 20 min — **288–317 W** (100–110 %) — 85-95 rpm · _Partir prudemment les 5 premières min. FTP = 95 % de la moyenne_
-- Retour au calme — 17 min — **130–158 W** (45–55 %) — 90 rpm
+- Échauffement progressif — 10 min — **158–202 W** (55–70 %) — 90 rpm
+- 3 × 1 min d'accélération — 6 min — **202–230 W** (70–80 %) — 100-105 rpm · _Puissance modérée, récup 1 min entre chaque_
+- Récupération — 5 min — **115–158 W** (40–55 %) — 90 rpm
+- Effort d'ouverture 5 min — 5 min — **311–323 W** (108–112 %) — 90 rpm · _Vide la composante anaérobie avant le test_
+- Récupération — 10 min — **115–158 W** (40–55 %) — 90 rpm · _C'est long, c'est normal_
+- LE TEST — 20 min régulier — 20 min — **288–311 W** (100–108 %) — 85-90 rpm · _Partir 5 % sous la cible les 2 premières minutes. FTP = 95 % de la moyenne ; FC seuil = FC moyenne des minutes 5 à 20_
+- Retour au calme — 10 min — **115–158 W** (40–55 %) — 90 rpm
 
 ### Natation
 
@@ -280,46 +284,72 @@ Seuil long, over-unders, résistance à la fatigue en fin de sortie longue, cade
 - Éducatifs + jambes avec palmes — 30 min · _Rien d'intense, uniquement la qualité du geste_
 - Retour au calme — 15 min
 
-### Renfo / PPG
+### Renforcement
 
-**PPG — endurance de force (3 × 12)** — 45 min
+**Renfo A — Bas du corps · endurance de force** — 45 min
 
-- Activation — 6 min · _Corde à sauter ou vélo souple + mobilité hanches/épaules_
+- Activation — 6 min · _Corde à sauter ou vélo souple, mobilité des hanches_
 - Bas du corps 3 × 12 — 18 min · _Squat gobelet · Fentes arrière · Hip thrust · Mollets sur une jambe_
-- Gainage lombo-pelvien 3 tours — 12 min · _Dead bug 10 · Bird dog 10/côté · Planche latérale 30 s/côté · Pallof press 10/côté_
-- Haut du corps (natation) 2 × 12 — 9 min · _Tirage élastique · Pompes · Rotation externe d'épaule à l'élastique · Y-T-W_
+- Ischios : Nordic 2 × 5 — 6 min · _Descente contrôlée, amplitude progressive_
+- Gainage lombo-pelvien 3 tours — 15 min · _Dead bug 10 · Bird dog 10/côté · Planche latérale 30 s/côté · Pallof press 10/côté_
 
-**PPG — force (4 × 6)** — 45 min
+**Renfo A — Bas du corps · force** — 45 min
 
 - Activation — 6 min · _Mobilité + 2 séries légères_
-- Force 4 × 6 (charge lourde, récup 2 min) — 20 min · _Squat ou soulevé de terre jambes tendues · Fentes bulgares · Step-up chargé_
-- Gainage anti-rotation 3 tours — 11 min · _Pallof press · Planche latérale avec élévation de jambe · Pont fessier unilatéral 10/côté_
-- Haut du corps (natation) 2 × 10 — 8 min · _Tirage élastique · Rotation externe · Gainage des épaules (planche + touchers d'épaule)_
+- Force 4 × 6, charge lourde — 22 min · _Squat ou soulevé de terre jambes tendues · Fentes bulgares · Step-up chargé. Récup 2 min_
+- Ischios : Nordic 3 × 5 — 7 min
+- Gainage anti-rotation 3 tours — 10 min · _Pallof press · Planche latérale avec élévation de jambe · Pont fessier unilatéral 10/côté_
 
-**PPG — force explosive & maintien** — 45 min
+**Renfo A — Bas du corps · force explosive** — 45 min
 
 - Activation — 6 min
-- Force 3 × 5 + pliométrie 3 × 6 — 20 min · _Squat lourd 3 × 5 en contraste avec 6 squats sautés · Fentes bulgares 3 × 6 · Step-up explosif_
-- Gainage 3 tours — 11 min · _Dead bug · Bird dog · Planche latérale 40 s_
-- Haut du corps (natation) — 8 min · _Tirage élastique · Rotation externe · Y-T-W_
+- Force 3 × 5 + pliométrie — 20 min · _Squat lourd 3 × 5 en contraste avec 6 squats sautés · Fentes bulgares 3 × 6 · Step-up explosif_
+- Ischios : Nordic 3 × 5 — 7 min
+- Gainage 3 tours — 12 min · _Dead bug · Bird dog · Planche latérale 40 s_
 
-**PPG allégée — gainage & mobilité** — 30 min
+**Renfo A — version allégée** — 30 min
 
-- Gainage 2 tours — 15 min · _Dead bug · Bird dog · Planche latérale · Pont fessier_
-- Mobilité — 15 min · _Hanches, thoracique, épaules_
+- Activation — 6 min
+- Bas du corps au poids du corps 2 × 10 — 12 min · _Squat · Fentes · Pont fessier_
+- Gainage 2 tours — 12 min · _Dead bug · Bird dog · Planche latérale_
 
-### Assouplissement
+**Renfo B — Haut du corps & gainage** — 30 min
 
-**Assouplissement & mobilité 30 min** — 30 min
+- Haut du corps 3 tours — 18 min · _Tirage élastique ou rowing · Pompes · Rotation externe d'épaule · Y-T-W_
+- Gainage des épaules — 8 min · _Planche avec touchers d'épaule · Planche latérale_
+- Mobilité des épaules — 4 min
 
-- Rouleau de massage — 6 min · _Quadriceps, fessiers, mollets, dos_
-- Hanches — 8 min · _90/90 · Fente basse psoas 45 s/côté · Pigeon 45 s/côté_
-- Chaîne arrière — 6 min · _Ischios à l'élastique · Mollets contre le mur_
-- Thoracique & épaules (crawl) — 10 min · _Open book · Chat-vache · Étirement des grands dorsaux · Rotation des épaules au bâton_
+**Renfo B — version allégée** — 20 min
 
-**Mobilité 10 min** — 10 min
+- Haut du corps 2 tours — 12 min · _Tirage élastique · Rotation externe · Y-T-W_
+- Gainage — 8 min
 
-- Hanches + dos + mollets — 10 min · _Après le ski : psoas, quadriceps, mollets, dos_
+### Éveils & assouplissement
+
+**Éveil 1 — Mobilité & activation** — 18 min
+
+- Réveil articulaire — 5 min · _Chevilles, genoux, hanches, épaules en cercles_
+- Activation des fessiers — 6 min · _Pont fessier 15, clamshell 12/côté, marche latérale à l'élastique_
+- Gainage court — 5 min · _Planche 30 s, dead bug 10, bird dog 8/côté_
+- Respiration — 2 min · _Respiration abdominale, 6 cycles lents_
+
+**Éveil 2 — Mobilité douce & thoracique** — 15 min
+
+- Colonne — 5 min · _Chat-vache, open book 8/côté_
+- Épaules (crawl) — 6 min · _Rotations au bâton, étirement des grands dorsaux, Y-T-W sans charge_
+- Hanches — 4 min · _90/90 lent, fente basse avec rotation_
+
+**Éveil 3 — Étirements longs (assouplissement)** — 25 min
+
+- Rouleau de massage — 5 min · _Quadriceps, fessiers, mollets, dos_
+- Psoas & quadriceps — 6 min · _Fente basse 45 s/côté, quadriceps allongé 45 s/côté_
+- Ischios & fessiers — 6 min · _Ischios à l'élastique, pigeon 60 s/côté_
+- Adducteurs & mollets — 4 min
+- Dos & épaules — 4 min · _Posture de l'enfant, étirement pectoraux au mur_
+
+**Mobilité 10 min (après ski)** — 10 min
+
+- Hanches, dos, mollets — 10 min · _Psoas, quadriceps, mollets, dos_
 
 ---
 _Document généré depuis `plan.js` (node build-doc.js). Application de suivi : index.html._
