@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Plan T1-2027 · Objectif Volcanique</title>
+  <meta name="description" content="Plan d'entraînement vélo T1-2027 : présentation, suivi des séances (ressenti, watts) et archivage.">
+  <meta name="theme-color" content="#2a78d6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Plan T1-2027">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="icon.svg" alt="" width="28" height="28">
+      <div>
+        <div class="brand-title">Plan T1-2027</div>
+        <div class="brand-sub" id="brand-sub">Objectif Volcanique</div>
+      </div>
+    </div>
+    <div class="ftp-chip" id="ftp-chip" title="FTP utilisée pour les cibles"></div>
+  </header>
+
+  <main id="view" class="view" aria-live="polite"></main>
+
+  <nav class="tabbar" aria-label="Navigation principale">
+    <button data-tab="today" class="active"><span class="ico">◉</span><span>Aujourd'hui</span></button>
+    <button data-tab="plan"><span class="ico">▦</span><span>Plan</span></button>
+    <button data-tab="suivi"><span class="ico">↗</span><span>Suivi</span></button>
+    <button data-tab="doc"><span class="ico">≡</span><span>Document</span></button>
+    <button data-tab="settings"><span class="ico">⚙</span><span>Réglages</span></button>
+  </nav>
+
+  <dialog id="modal" class="modal">
+    <form method="dialog" class="modal-close-row"><button class="icon-btn" aria-label="Fermer">✕</button></form>
+    <div id="modal-body"></div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="plan.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
